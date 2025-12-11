@@ -65,9 +65,9 @@ export class JsonDiagramPanel {
         this._panel.dispose();
 
         while (this._disposables.length) {
-            const x = this._disposables.pop();
-            if (x) {
-                x.dispose();
+            const disposable = this._disposables.pop();
+            if (disposable) {
+                disposable.dispose();
             }
         }
     }
