@@ -2,6 +2,7 @@ import * as vscode from "vscode";
 import { JsonDiagramPanel } from "./JsonDiagramPanel";
 
 const JSON_LANGUAGE_ID = "json";
+const VIEW_AS_DIAGRAM_COMMAND = "jsonDiagramViewer.viewAsDiagram";
 
 function isJsonDocument(document: vscode.TextDocument): boolean {
   return document.languageId === JSON_LANGUAGE_ID;
@@ -9,7 +10,7 @@ function isJsonDocument(document: vscode.TextDocument): boolean {
 
 export function activate(context: vscode.ExtensionContext) {
   const disposable = vscode.commands.registerCommand(
-    "jsonDiagramViewer.viewAsDiagram",
+    VIEW_AS_DIAGRAM_COMMAND,
     () => {
       const editor = vscode.window.activeTextEditor;
       if (!editor) {
