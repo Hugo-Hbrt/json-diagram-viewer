@@ -1,6 +1,8 @@
 import * as vscode from "vscode";
 import { JsonDiagramPanel } from "./JsonDiagramPanel";
 
+const JSON_LANGUAGE_ID = "json";
+
 export function activate(context: vscode.ExtensionContext) {
   const disposable = vscode.commands.registerCommand(
     "jsonDiagramViewer.viewAsDiagram",
@@ -12,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
       }
 
       const document = editor.document;
-      if (document.languageId !== "json") {
+      if (document.languageId !== JSON_LANGUAGE_ID) {
         vscode.window.showErrorMessage(
           "This command only works with JSON files"
         );
@@ -28,7 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
   // Watch for document changes to update the diagram
   context.subscriptions.push(
     vscode.workspace.onDidSaveTextDocument((document) => {
-      if (document.languageId === "json") {
+      if (document.languageId === JSON_LANGUAGE_ID) {
         JsonDiagramPanel.updateIfVisible(document);
       }
     })
@@ -37,7 +39,7 @@ export function activate(context: vscode.ExtensionContext) {
   // Watch for document changes (live updates while typing)
   context.subscriptions.push(
     vscode.workspace.onDidChangeTextDocument((event) => {
-      if (event.document.languageId === "json") {
+      if (event.document.languageId === JSON_LANGUAGE_ID) {
         JsonDiagramPanel.updateIfVisible(event.document);
       }
     })
