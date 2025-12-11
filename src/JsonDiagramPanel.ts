@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { WebviewContentBuilder } from './WebviewContentBuilder';
+import { ReactWebviewContentBuilder } from './ReactWebviewContentBuilder';
 
 export class JsonDiagramPanel {
     public static currentPanel: JsonDiagramPanel | undefined;
@@ -29,7 +29,9 @@ export class JsonDiagramPanel {
             {
                 enableScripts: true,
                 retainContextWhenHidden: true,
-                localResourceRoots: [extensionUri]
+                localResourceRoots: [
+                    vscode.Uri.joinPath(extensionUri, 'webview-ui', 'dist')
+                ]
             }
         );
 
@@ -80,6 +82,6 @@ export class JsonDiagramPanel {
     }
 
     private _getHtmlForWebview(): string {
-        return WebviewContentBuilder.buildHtml();
+        return ReactWebviewContentBuilder.buildHtml(this._panel.webview, this._extensionUri);
     }
 }

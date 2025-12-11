@@ -6,3 +6,10 @@ src/**
 tsconfig.json
 node_modules/**
 sample.json
+webview-ui/src/**
+webview-ui/node_modules/**
+webview-ui/tsconfig.json
+webview-ui/vite.config.ts
+webview-ui/index.html
+webview-ui/package.json
+webview-ui/package-lock.json

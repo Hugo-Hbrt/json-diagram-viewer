@@ -6,3 +6,4 @@ node_modules/
 .DS_Store
 *.log
 .claude/
+webview-ui/node_modules/
