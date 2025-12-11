@@ -1,0 +1,60 @@
+{
+  "name": "json-diagram-viewer",
+  "displayName": "JSON Diagram Viewer",
+  "description": "Visualizes JSON files as interactive tree diagrams",
+  "version": "1.0.0",
+  "publisher": "json-diagram-viewer",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:json"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jsonDiagramViewer.viewAsDiagram",
+        "title": "View as Diagram",
+        "category": "JSON Diagram"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "jsonDiagramViewer.viewAsDiagram",
+          "when": "resourceLangId == json",
+          "group": "navigation"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "jsonDiagramViewer.viewAsDiagram",
+          "when": "resourceLangId == json",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "jsonDiagramViewer.viewAsDiagram",
+          "when": "resourceLangId == json"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.0.0"
+  }
+}
