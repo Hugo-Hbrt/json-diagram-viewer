@@ -2,7 +2,7 @@
 
 Visualize JSON files as interactive tree diagrams in VS Code.
 
-![JSON Diagram Viewer Demo](images/demo.gif)
+![JSON Diagram Viewer Demo](json_diagram_example.gif)
 
 ## Features
 
