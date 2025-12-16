@@ -2,6 +2,7 @@
   "name": "json-diagram-webview",
   "private": true,
   "version": "1.0.0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,6 +18,6 @@
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.2.0",
     "typescript": "^5.0.0",
-    "vite": "^5.0.0"
+    "vite": "^7.3.0"
   }
 }

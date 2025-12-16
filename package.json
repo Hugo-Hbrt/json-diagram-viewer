@@ -3,6 +3,7 @@
   "displayName": "JSON Diagram Viewer",
   "description": "Visualizes JSON files as interactive tree diagrams",
   "version": "1.0.0",
+  "license": "MIT",
   "publisher": "json-diagram-viewer",
   "engines": {
     "vscode": "^1.74.0"
