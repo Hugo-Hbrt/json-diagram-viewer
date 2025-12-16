@@ -5,6 +5,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "publisher": "json-diagram-viewer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hugo-Hbrt/json-diagram-viewer"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
