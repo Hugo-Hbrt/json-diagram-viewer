@@ -4,7 +4,7 @@
   "description": "Visualizes JSON files as interactive tree diagrams",
   "version": "1.0.0",
   "license": "MIT",
-  "publisher": "HugoHebert",
+  "publisher": "Hugo-Hbrt",
   "repository": {
     "type": "git",
     "url": "https://github.com/Hugo-Hbrt/json-diagram-viewer"
