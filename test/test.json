@@ -1,0 +1,3134 @@
+{
+  "company": {
+    "name": "TechCorp Industries",
+    "founded": 2010,
+    "active": true,
+    "headquarters": {
+      "address": {
+        "street": "123 Innovation Drive",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94102",
+        "country": "USA"
+      },
+      "coordinates": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "facilities": [
+        {
+          "name": "Main Building",
+          "floors": 12,
+          "capacity": 500,
+          "amenities": ["cafeteria", "gym", "parking", "rooftop garden"]
+        },
+        {
+          "name": "Research Lab",
+          "floors": 3,
+          "capacity": 150,
+          "amenities": ["clean room", "server room", "testing facility"]
+        }
+      ]
+    },
+    "departments": [
+      {
+        "id": "dept-001",
+        "name": "Engineering",
+        "budget": 5000000,
+        "headCount": 120,
+        "manager": {
+          "id": "emp-001",
+          "name": "Alice Johnson",
+          "email": "alice.johnson@techcorp.com",
+          "hireDate": "2015-03-15"
+        },
+        "teams": [
+          {
+            "name": "Frontend",
+            "members": [
+              {
+                "id": "emp-101",
+                "name": "Bob Smith",
+                "role": "Senior Developer",
+                "skills": ["React", "TypeScript", "CSS", "GraphQL"],
+                "projects": [
+                  {
+                    "id": "proj-001",
+                    "name": "Dashboard Redesign",
+                    "status": "in_progress",
+                    "completion": 75
+                  },
+                  {
+                    "id": "proj-002",
+                    "name": "Mobile App",
+                    "status": "planning",
+                    "completion": 10
+                  }
+                ]
+              },
+              {
+                "id": "emp-102",
+                "name": "Carol White",
+                "role": "Developer",
+                "skills": ["Vue", "JavaScript", "SCSS"],
+                "projects": [
+                  {
+                    "id": "proj-001",
+                    "name": "Dashboard Redesign",
+                    "status": "in_progress",
+                    "completion": 75
+                  }
+                ]
+              },
+              {
+                "id": "emp-103",
+                "name": "David Brown",
+                "role": "Junior Developer",
+                "skills": ["HTML", "CSS", "JavaScript"],
+                "projects": []
+              }
+            ]
+          },
+          {
+            "name": "Backend",
+            "members": [
+              {
+                "id": "emp-201",
+                "name": "Eva Martinez",
+                "role": "Lead Developer",
+                "skills": ["Node.js", "Python", "PostgreSQL", "Redis", "Docker"],
+                "projects": [
+                  {
+                    "id": "proj-003",
+                    "name": "API Gateway",
+                    "status": "completed",
+                    "completion": 100
+                  },
+                  {
+                    "id": "proj-004",
+                    "name": "Microservices Migration",
+                    "status": "in_progress",
+                    "completion": 45
+                  }
+                ]
+              },
+              {
+                "id": "emp-202",
+                "name": "Frank Lee",
+                "role": "Senior Developer",
+                "skills": ["Go", "Kubernetes", "AWS"],
+                "projects": [
+                  {
+                    "id": "proj-004",
+                    "name": "Microservices Migration",
+                    "status": "in_progress",
+                    "completion": 45
+                  }
+                ]
+              },
+              {
+                "id": "emp-203",
+                "name": "Grace Kim",
+                "role": "Developer",
+                "skills": ["Java", "Spring Boot", "MySQL"],
+                "projects": [
+                  {
+                    "id": "proj-005",
+                    "name": "Legacy System Update",
+                    "status": "in_progress",
+                    "completion": 60
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "DevOps",
+            "members": [
+              {
+                "id": "emp-301",
+                "name": "Henry Wilson",
+                "role": "DevOps Engineer",
+                "skills": ["Terraform", "Ansible", "Jenkins", "AWS", "GCP"],
+                "projects": [
+                  {
+                    "id": "proj-006",
+                    "name": "CI/CD Pipeline",
+                    "status": "completed",
+                    "completion": 100
+                  }
+                ]
+              },
+              {
+                "id": "emp-302",
+                "name": "Iris Chen",
+                "role": "SRE",
+                "skills": ["Prometheus", "Grafana", "Kubernetes", "Linux"],
+                "projects": [
+                  {
+                    "id": "proj-007",
+                    "name": "Monitoring Dashboard",
+                    "status": "in_progress",
+                    "completion": 80
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dept-002",
+        "name": "Product",
+        "budget": 2000000,
+        "headCount": 35,
+        "manager": {
+          "id": "emp-002",
+          "name": "James Taylor",
+          "email": "james.taylor@techcorp.com",
+          "hireDate": "2016-07-01"
+        },
+        "teams": [
+          {
+            "name": "Product Management",
+            "members": [
+              {
+                "id": "emp-401",
+                "name": "Karen Davis",
+                "role": "Senior PM",
+                "skills": ["Roadmapping", "User Research", "Agile", "JIRA"],
+                "projects": [
+                  {
+                    "id": "proj-001",
+                    "name": "Dashboard Redesign",
+                    "status": "in_progress",
+                    "completion": 75
+                  },
+                  {
+                    "id": "proj-002",
+                    "name": "Mobile App",
+                    "status": "planning",
+                    "completion": 10
+                  }
+                ]
+              },
+              {
+                "id": "emp-402",
+                "name": "Leo Garcia",
+                "role": "PM",
+                "skills": ["Analytics", "A/B Testing", "SQL"],
+                "projects": [
+                  {
+                    "id": "proj-008",
+                    "name": "Feature Flags System",
+                    "status": "in_progress",
+                    "completion": 30
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "UX Design",
+            "members": [
+              {
+                "id": "emp-501",
+                "name": "Mia Robinson",
+                "role": "UX Lead",
+                "skills": ["Figma", "User Testing", "Prototyping", "Design Systems"],
+                "projects": [
+                  {
+                    "id": "proj-001",
+                    "name": "Dashboard Redesign",
+                    "status": "in_progress",
+                    "completion": 75
+                  }
+                ]
+              },
+              {
+                "id": "emp-502",
+                "name": "Noah Clark",
+                "role": "UX Designer",
+                "skills": ["Sketch", "InVision", "CSS"],
+                "projects": [
+                  {
+                    "id": "proj-002",
+                    "name": "Mobile App",
+                    "status": "planning",
+                    "completion": 10
+                  }
+                ]
+              },
+              {
+                "id": "emp-503",
+                "name": "Olivia Hall",
+                "role": "UI Designer",
+                "skills": ["Illustrator", "Photoshop", "Animation"],
+                "projects": [
+                  {
+                    "id": "proj-009",
+                    "name": "Brand Refresh",
+                    "status": "in_progress",
+                    "completion": 50
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dept-003",
+        "name": "Sales",
+        "budget": 3000000,
+        "headCount": 50,
+        "manager": {
+          "id": "emp-003",
+          "name": "Patricia Moore",
+          "email": "patricia.moore@techcorp.com",
+          "hireDate": "2014-01-10"
+        },
+        "teams": [
+          {
+            "name": "Enterprise Sales",
+            "members": [
+              {
+                "id": "emp-601",
+                "name": "Quinn Adams",
+                "role": "Account Executive",
+                "skills": ["Negotiation", "CRM", "Presentation"],
+                "projects": []
+              },
+              {
+                "id": "emp-602",
+                "name": "Ryan Scott",
+                "role": "Account Executive",
+                "skills": ["Cold Calling", "Lead Generation", "Salesforce"],
+                "projects": []
+              }
+            ]
+          },
+          {
+            "name": "SMB Sales",
+            "members": [
+              {
+                "id": "emp-701",
+                "name": "Sophia Turner",
+                "role": "Sales Rep",
+                "skills": ["Email Outreach", "Demo", "Closing"],
+                "projects": []
+              },
+              {
+                "id": "emp-702",
+                "name": "Thomas Baker",
+                "role": "Sales Rep",
+                "skills": ["Social Selling", "LinkedIn", "HubSpot"],
+                "projects": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dept-004",
+        "name": "Human Resources",
+        "budget": 1500000,
+        "headCount": 20,
+        "manager": {
+          "id": "emp-004",
+          "name": "Uma Patel",
+          "email": "uma.patel@techcorp.com",
+          "hireDate": "2017-05-20"
+        },
+        "teams": [
+          {
+            "name": "Recruiting",
+            "members": [
+              {
+                "id": "emp-801",
+                "name": "Victor Nguyen",
+                "role": "Technical Recruiter",
+                "skills": ["Sourcing", "Interviewing", "ATS"],
+                "projects": []
+              },
+              {
+                "id": "emp-802",
+                "name": "Wendy Lopez",
+                "role": "Recruiter",
+                "skills": ["Campus Recruiting", "Job Fairs", "Onboarding"],
+                "projects": []
+              }
+            ]
+          },
+          {
+            "name": "People Operations",
+            "members": [
+              {
+                "id": "emp-901",
+                "name": "Xavier Wright",
+                "role": "HR Specialist",
+                "skills": ["Benefits", "Compliance", "HRIS"],
+                "projects": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "prod-001",
+      "name": "CloudSync Pro",
+      "category": "Cloud Storage",
+      "version": "3.5.2",
+      "releaseDate": "2023-06-15",
+      "active": true,
+      "pricing": {
+        "currency": "USD",
+        "plans": [
+          {
+            "name": "Starter",
+            "monthlyPrice": 9.99,
+            "yearlyPrice": 99.99,
+            "features": ["5GB Storage", "2 Users", "Email Support"],
+            "limits": {
+              "storage": 5368709120,
+              "users": 2,
+              "apiCalls": 1000
+            }
+          },
+          {
+            "name": "Professional",
+            "monthlyPrice": 29.99,
+            "yearlyPrice": 299.99,
+            "features": ["50GB Storage", "10 Users", "Priority Support", "API Access"],
+            "limits": {
+              "storage": 53687091200,
+              "users": 10,
+              "apiCalls": 10000
+            }
+          },
+          {
+            "name": "Enterprise",
+            "monthlyPrice": 99.99,
+            "yearlyPrice": 999.99,
+            "features": ["Unlimited Storage", "Unlimited Users", "24/7 Support", "Custom Integrations", "SLA"],
+            "limits": {
+              "storage": null,
+              "users": null,
+              "apiCalls": null
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "totalUsers": 45000,
+        "activeUsers": 38000,
+        "monthlyRevenue": 850000,
+        "churnRate": 0.023,
+        "nps": 72
+      },
+      "integrations": [
+        {
+          "name": "Slack",
+          "type": "notification",
+          "enabled": true,
+          "config": {
+            "webhookUrl": "https://hooks.slack.com/services/xxx",
+            "channels": ["#general", "#alerts"]
+          }
+        },
+        {
+          "name": "Salesforce",
+          "type": "crm",
+          "enabled": true,
+          "config": {
+            "apiVersion": "v55.0",
+            "syncInterval": 3600
+          }
+        },
+        {
+          "name": "Zapier",
+          "type": "automation",
+          "enabled": false,
+          "config": null
+        }
+      ]
+    },
+    {
+      "id": "prod-002",
+      "name": "DataVault Analytics",
+      "category": "Business Intelligence",
+      "version": "2.1.0",
+      "releaseDate": "2023-09-01",
+      "active": true,
+      "pricing": {
+        "currency": "USD",
+        "plans": [
+          {
+            "name": "Basic",
+            "monthlyPrice": 49.99,
+            "yearlyPrice": 499.99,
+            "features": ["5 Dashboards", "Basic Charts", "CSV Export"],
+            "limits": {
+              "dashboards": 5,
+              "dataRows": 100000,
+              "refreshRate": 86400
+            }
+          },
+          {
+            "name": "Advanced",
+            "monthlyPrice": 149.99,
+            "yearlyPrice": 1499.99,
+            "features": ["Unlimited Dashboards", "Advanced Visualizations", "Real-time Data", "Collaboration"],
+            "limits": {
+              "dashboards": null,
+              "dataRows": 10000000,
+              "refreshRate": 300
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "totalUsers": 12000,
+        "activeUsers": 9500,
+        "monthlyRevenue": 420000,
+        "churnRate": 0.018,
+        "nps": 68
+      },
+      "integrations": [
+        {
+          "name": "PostgreSQL",
+          "type": "database",
+          "enabled": true,
+          "config": {
+            "maxConnections": 100,
+            "timeout": 30000
+          }
+        },
+        {
+          "name": "BigQuery",
+          "type": "database",
+          "enabled": true,
+          "config": {
+            "projectId": "techcorp-analytics",
+            "dataset": "production"
+          }
+        },
+        {
+          "name": "Snowflake",
+          "type": "database",
+          "enabled": true,
+          "config": {
+            "account": "techcorp.us-east-1",
+            "warehouse": "COMPUTE_WH"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prod-003",
+      "name": "SecureAuth Gateway",
+      "category": "Security",
+      "version": "4.0.1",
+      "releaseDate": "2023-11-20",
+      "active": true,
+      "pricing": {
+        "currency": "USD",
+        "plans": [
+          {
+            "name": "Team",
+            "monthlyPrice": 5.00,
+            "yearlyPrice": 50.00,
+            "features": ["SSO", "MFA", "Basic Audit Logs"],
+            "limits": {
+              "users": 50,
+              "applications": 5,
+              "logRetention": 30
+            }
+          },
+          {
+            "name": "Business",
+            "monthlyPrice": 10.00,
+            "yearlyPrice": 100.00,
+            "features": ["SSO", "MFA", "Advanced Audit", "Custom Policies", "API Access"],
+            "limits": {
+              "users": 500,
+              "applications": 25,
+              "logRetention": 90
+            }
+          },
+          {
+            "name": "Enterprise",
+            "monthlyPrice": 15.00,
+            "yearlyPrice": 150.00,
+            "features": ["Everything in Business", "SCIM", "Custom SAML", "Dedicated Support"],
+            "limits": {
+              "users": null,
+              "applications": null,
+              "logRetention": 365
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "totalUsers": 85000,
+        "activeUsers": 82000,
+        "monthlyRevenue": 650000,
+        "churnRate": 0.008,
+        "nps": 81
+      },
+      "integrations": [
+        {
+          "name": "Okta",
+          "type": "identity",
+          "enabled": true,
+          "config": {
+            "domain": "techcorp.okta.com",
+            "syncEnabled": true
+          }
+        },
+        {
+          "name": "Azure AD",
+          "type": "identity",
+          "enabled": true,
+          "config": {
+            "tenantId": "abc-123-def",
+            "syncEnabled": true
+          }
+        },
+        {
+          "name": "Google Workspace",
+          "type": "identity",
+          "enabled": true,
+          "config": {
+            "domain": "techcorp.com",
+            "syncEnabled": false
+          }
+        }
+      ]
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-001",
+      "name": "Acme Corporation",
+      "industry": "Manufacturing",
+      "size": "enterprise",
+      "status": "active",
+      "contractValue": 250000,
+      "contractStart": "2022-01-01",
+      "contractEnd": "2024-12-31",
+      "contacts": [
+        {
+          "name": "John Doe",
+          "title": "CTO",
+          "email": "john.doe@acme.com",
+          "phone": "+1-555-0101",
+          "primary": true
+        },
+        {
+          "name": "Jane Smith",
+          "title": "IT Director",
+          "email": "jane.smith@acme.com",
+          "phone": "+1-555-0102",
+          "primary": false
+        }
+      ],
+      "subscriptions": [
+        {
+          "productId": "prod-001",
+          "plan": "Enterprise",
+          "quantity": 500,
+          "startDate": "2022-01-01",
+          "status": "active",
+          "usage": {
+            "storageUsed": 42949672960,
+            "activeUsers": 487,
+            "apiCallsThisMonth": 85000
+          }
+        },
+        {
+          "productId": "prod-003",
+          "plan": "Enterprise",
+          "quantity": 500,
+          "startDate": "2022-06-01",
+          "status": "active",
+          "usage": {
+            "authenticationsThisMonth": 125000,
+            "failedAttempts": 234,
+            "mfaAdoption": 0.92
+          }
+        }
+      ],
+      "tickets": [
+        {
+          "id": "tkt-001",
+          "subject": "Integration issue with legacy system",
+          "priority": "high",
+          "status": "open",
+          "createdAt": "2024-01-15T10:30:00Z",
+          "updatedAt": "2024-01-16T14:22:00Z",
+          "assignee": "emp-201",
+          "messages": [
+            {
+              "author": "John Doe",
+              "timestamp": "2024-01-15T10:30:00Z",
+              "content": "We're having trouble connecting CloudSync to our ERP system."
+            },
+            {
+              "author": "Eva Martinez",
+              "timestamp": "2024-01-15T11:45:00Z",
+              "content": "Thanks for reaching out. Can you provide the error logs?"
+            },
+            {
+              "author": "John Doe",
+              "timestamp": "2024-01-16T09:00:00Z",
+              "content": "Here are the logs from yesterday's sync attempt."
+            }
+          ]
+        },
+        {
+          "id": "tkt-002",
+          "subject": "Request for additional API endpoints",
+          "priority": "medium",
+          "status": "in_progress",
+          "createdAt": "2024-01-10T08:00:00Z",
+          "updatedAt": "2024-01-14T16:30:00Z",
+          "assignee": "emp-402",
+          "messages": [
+            {
+              "author": "Jane Smith",
+              "timestamp": "2024-01-10T08:00:00Z",
+              "content": "We need batch operations for user management."
+            },
+            {
+              "author": "Leo Garcia",
+              "timestamp": "2024-01-10T14:00:00Z",
+              "content": "This is on our roadmap for Q2. I'll expedite the review."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cust-002",
+      "name": "Global Tech Solutions",
+      "industry": "Technology",
+      "size": "mid-market",
+      "status": "active",
+      "contractValue": 85000,
+      "contractStart": "2023-03-15",
+      "contractEnd": "2025-03-14",
+      "contacts": [
+        {
+          "name": "Sarah Connor",
+          "title": "VP Engineering",
+          "email": "sarah.connor@globaltech.io",
+          "phone": "+1-555-0201",
+          "primary": true
+        }
+      ],
+      "subscriptions": [
+        {
+          "productId": "prod-001",
+          "plan": "Professional",
+          "quantity": 50,
+          "startDate": "2023-03-15",
+          "status": "active",
+          "usage": {
+            "storageUsed": 32212254720,
+            "activeUsers": 48,
+            "apiCallsThisMonth": 7500
+          }
+        },
+        {
+          "productId": "prod-002",
+          "plan": "Advanced",
+          "quantity": 20,
+          "startDate": "2023-06-01",
+          "status": "active",
+          "usage": {
+            "dashboardsCreated": 35,
+            "dataRowsProcessed": 5000000,
+            "queriesThisMonth": 12000
+          }
+        }
+      ],
+      "tickets": []
+    },
+    {
+      "id": "cust-003",
+      "name": "StartUp Innovations",
+      "industry": "Fintech",
+      "size": "startup",
+      "status": "active",
+      "contractValue": 12000,
+      "contractStart": "2023-09-01",
+      "contractEnd": "2024-08-31",
+      "contacts": [
+        {
+          "name": "Mike Johnson",
+          "title": "CEO",
+          "email": "mike@startupinnovations.com",
+          "phone": "+1-555-0301",
+          "primary": true
+        },
+        {
+          "name": "Lisa Wang",
+          "title": "CTO",
+          "email": "lisa@startupinnovations.com",
+          "phone": "+1-555-0302",
+          "primary": false
+        }
+      ],
+      "subscriptions": [
+        {
+          "productId": "prod-001",
+          "plan": "Starter",
+          "quantity": 10,
+          "startDate": "2023-09-01",
+          "status": "active",
+          "usage": {
+            "storageUsed": 2147483648,
+            "activeUsers": 8,
+            "apiCallsThisMonth": 450
+          }
+        }
+      ],
+      "tickets": [
+        {
+          "id": "tkt-003",
+          "subject": "Upgrade inquiry",
+          "priority": "low",
+          "status": "closed",
+          "createdAt": "2024-01-05T12:00:00Z",
+          "updatedAt": "2024-01-06T10:00:00Z",
+          "assignee": "emp-701",
+          "messages": [
+            {
+              "author": "Mike Johnson",
+              "timestamp": "2024-01-05T12:00:00Z",
+              "content": "What are the benefits of upgrading to Professional?"
+            },
+            {
+              "author": "Sophia Turner",
+              "timestamp": "2024-01-05T14:30:00Z",
+              "content": "Great question! Here's a comparison of the plans..."
+            },
+            {
+              "author": "Mike Johnson",
+              "timestamp": "2024-01-06T10:00:00Z",
+              "content": "Thanks, we'll consider this for next quarter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cust-004",
+      "name": "Healthcare Plus",
+      "industry": "Healthcare",
+      "size": "enterprise",
+      "status": "active",
+      "contractValue": 180000,
+      "contractStart": "2021-07-01",
+      "contractEnd": "2024-06-30",
+      "contacts": [
+        {
+          "name": "Dr. Robert Chen",
+          "title": "CISO",
+          "email": "robert.chen@healthcareplus.org",
+          "phone": "+1-555-0401",
+          "primary": true
+        },
+        {
+          "name": "Amanda Foster",
+          "title": "IT Manager",
+          "email": "amanda.foster@healthcareplus.org",
+          "phone": "+1-555-0402",
+          "primary": false
+        }
+      ],
+      "subscriptions": [
+        {
+          "productId": "prod-003",
+          "plan": "Enterprise",
+          "quantity": 2000,
+          "startDate": "2021-07-01",
+          "status": "active",
+          "usage": {
+            "authenticationsThisMonth": 450000,
+            "failedAttempts": 1200,
+            "mfaAdoption": 0.98
+          }
+        }
+      ],
+      "tickets": [
+        {
+          "id": "tkt-004",
+          "subject": "HIPAA compliance documentation",
+          "priority": "high",
+          "status": "closed",
+          "createdAt": "2023-12-01T09:00:00Z",
+          "updatedAt": "2023-12-05T16:00:00Z",
+          "assignee": "emp-901",
+          "messages": [
+            {
+              "author": "Dr. Robert Chen",
+              "timestamp": "2023-12-01T09:00:00Z",
+              "content": "We need updated compliance documentation for our audit."
+            },
+            {
+              "author": "Xavier Wright",
+              "timestamp": "2023-12-02T10:00:00Z",
+              "content": "I'll prepare the documentation package for you."
+            },
+            {
+              "author": "Xavier Wright",
+              "timestamp": "2023-12-05T16:00:00Z",
+              "content": "Documentation has been sent to your email."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cust-005",
+      "name": "EduLearn Academy",
+      "industry": "Education",
+      "size": "mid-market",
+      "status": "churned",
+      "contractValue": 45000,
+      "contractStart": "2022-09-01",
+      "contractEnd": "2023-08-31",
+      "contacts": [
+        {
+          "name": "Professor James Wilson",
+          "title": "Dean of Technology",
+          "email": "jwilson@edulearn.edu",
+          "phone": "+1-555-0501",
+          "primary": true
+        }
+      ],
+      "subscriptions": [
+        {
+          "productId": "prod-001",
+          "plan": "Professional",
+          "quantity": 100,
+          "startDate": "2022-09-01",
+          "status": "cancelled",
+          "usage": {
+            "storageUsed": 0,
+            "activeUsers": 0,
+            "apiCallsThisMonth": 0
+          }
+        }
+      ],
+      "tickets": []
+    }
+  ],
+  "analytics": {
+    "overview": {
+      "totalRevenue": 1920000,
+      "totalCustomers": 156,
+      "activeSubscriptions": 287,
+      "averageContractValue": 78500,
+      "yearOverYearGrowth": 0.34
+    },
+    "revenueByProduct": [
+      {
+        "productId": "prod-001",
+        "productName": "CloudSync Pro",
+        "revenue": 850000,
+        "percentage": 0.443
+      },
+      {
+        "productId": "prod-002",
+        "productName": "DataVault Analytics",
+        "revenue": 420000,
+        "percentage": 0.219
+      },
+      {
+        "productId": "prod-003",
+        "productName": "SecureAuth Gateway",
+        "revenue": 650000,
+        "percentage": 0.338
+      }
+    ],
+    "revenueByIndustry": [
+      {
+        "industry": "Technology",
+        "revenue": 580000,
+        "customerCount": 45
+      },
+      {
+        "industry": "Healthcare",
+        "revenue": 420000,
+        "customerCount": 28
+      },
+      {
+        "industry": "Manufacturing",
+        "revenue": 380000,
+        "customerCount": 32
+      },
+      {
+        "industry": "Finance",
+        "revenue": 320000,
+        "customerCount": 25
+      },
+      {
+        "industry": "Education",
+        "revenue": 120000,
+        "customerCount": 18
+      },
+      {
+        "industry": "Other",
+        "revenue": 100000,
+        "customerCount": 8
+      }
+    ],
+    "monthlyMetrics": [
+      {
+        "month": "2024-01",
+        "mrr": 1920000,
+        "newCustomers": 12,
+        "churnedCustomers": 3,
+        "expansionRevenue": 45000,
+        "netRevenueRetention": 1.08
+      },
+      {
+        "month": "2023-12",
+        "mrr": 1850000,
+        "newCustomers": 15,
+        "churnedCustomers": 2,
+        "expansionRevenue": 38000,
+        "netRevenueRetention": 1.12
+      },
+      {
+        "month": "2023-11",
+        "mrr": 1780000,
+        "newCustomers": 10,
+        "churnedCustomers": 4,
+        "expansionRevenue": 52000,
+        "netRevenueRetention": 1.05
+      },
+      {
+        "month": "2023-10",
+        "mrr": 1720000,
+        "newCustomers": 14,
+        "churnedCustomers": 2,
+        "expansionRevenue": 41000,
+        "netRevenueRetention": 1.09
+      },
+      {
+        "month": "2023-09",
+        "mrr": 1650000,
+        "newCustomers": 11,
+        "churnedCustomers": 3,
+        "expansionRevenue": 35000,
+        "netRevenueRetention": 1.06
+      },
+      {
+        "month": "2023-08",
+        "mrr": 1600000,
+        "newCustomers": 9,
+        "churnedCustomers": 5,
+        "expansionRevenue": 28000,
+        "netRevenueRetention": 1.02
+      },
+      {
+        "month": "2023-07",
+        "mrr": 1560000,
+        "newCustomers": 13,
+        "churnedCustomers": 2,
+        "expansionRevenue": 44000,
+        "netRevenueRetention": 1.11
+      },
+      {
+        "month": "2023-06",
+        "mrr": 1490000,
+        "newCustomers": 16,
+        "churnedCustomers": 3,
+        "expansionRevenue": 39000,
+        "netRevenueRetention": 1.08
+      },
+      {
+        "month": "2023-05",
+        "mrr": 1420000,
+        "newCustomers": 8,
+        "churnedCustomers": 4,
+        "expansionRevenue": 31000,
+        "netRevenueRetention": 1.04
+      },
+      {
+        "month": "2023-04",
+        "mrr": 1380000,
+        "newCustomers": 12,
+        "churnedCustomers": 2,
+        "expansionRevenue": 48000,
+        "netRevenueRetention": 1.10
+      },
+      {
+        "month": "2023-03",
+        "mrr": 1310000,
+        "newCustomers": 10,
+        "churnedCustomers": 3,
+        "expansionRevenue": 36000,
+        "netRevenueRetention": 1.07
+      },
+      {
+        "month": "2023-02",
+        "mrr": 1260000,
+        "newCustomers": 11,
+        "churnedCustomers": 2,
+        "expansionRevenue": 42000,
+        "netRevenueRetention": 1.09
+      }
+    ],
+    "featureUsage": {
+      "cloudSyncPro": {
+        "fileSync": {
+          "dailyActiveUsers": 32000,
+          "filesPerDay": 2500000,
+          "averageFileSize": 1048576
+        },
+        "collaboration": {
+          "sharedFolders": 15000,
+          "activeCollaborators": 28000,
+          "commentsPerDay": 8500
+        },
+        "api": {
+          "totalCalls": 45000000,
+          "averageLatency": 125,
+          "errorRate": 0.002
+        }
+      },
+      "dataVaultAnalytics": {
+        "dashboards": {
+          "total": 8500,
+          "viewsPerDay": 125000,
+          "averageLoadTime": 2.3
+        },
+        "queries": {
+          "totalPerDay": 450000,
+          "averageExecutionTime": 1.8,
+          "cacheHitRate": 0.72
+        },
+        "exports": {
+          "csvPerDay": 12000,
+          "pdfPerDay": 3500,
+          "scheduledReports": 2800
+        }
+      },
+      "secureAuthGateway": {
+        "authentication": {
+          "totalPerDay": 2500000,
+          "successRate": 0.994,
+          "averageLatency": 85
+        },
+        "mfa": {
+          "enrolledUsers": 145000,
+          "verificationsPerDay": 180000,
+          "preferredMethod": "authenticator_app"
+        },
+        "sso": {
+          "configuredApps": 1250,
+          "sessionsPerDay": 850000,
+          "averageSessionDuration": 28800
+        }
+      }
+    }
+  },
+  "infrastructure": {
+    "servers": [
+      {
+        "id": "srv-001",
+        "name": "api-prod-1",
+        "type": "application",
+        "provider": "AWS",
+        "region": "us-east-1",
+        "instanceType": "c5.2xlarge",
+        "status": "running",
+        "specs": {
+          "cpu": 8,
+          "memory": 16384,
+          "storage": 500
+        },
+        "metrics": {
+          "cpuUtilization": 0.45,
+          "memoryUtilization": 0.62,
+          "networkIn": 125000000,
+          "networkOut": 89000000
+        },
+        "tags": ["production", "api", "critical"]
+      },
+      {
+        "id": "srv-002",
+        "name": "api-prod-2",
+        "type": "application",
+        "provider": "AWS",
+        "region": "us-east-1",
+        "instanceType": "c5.2xlarge",
+        "status": "running",
+        "specs": {
+          "cpu": 8,
+          "memory": 16384,
+          "storage": 500
+        },
+        "metrics": {
+          "cpuUtilization": 0.52,
+          "memoryUtilization": 0.58,
+          "networkIn": 118000000,
+          "networkOut": 92000000
+        },
+        "tags": ["production", "api", "critical"]
+      },
+      {
+        "id": "srv-003",
+        "name": "api-prod-3",
+        "type": "application",
+        "provider": "AWS",
+        "region": "us-west-2",
+        "instanceType": "c5.2xlarge",
+        "status": "running",
+        "specs": {
+          "cpu": 8,
+          "memory": 16384,
+          "storage": 500
+        },
+        "metrics": {
+          "cpuUtilization": 0.38,
+          "memoryUtilization": 0.55,
+          "networkIn": 95000000,
+          "networkOut": 78000000
+        },
+        "tags": ["production", "api", "dr"]
+      },
+      {
+        "id": "srv-004",
+        "name": "db-prod-primary",
+        "type": "database",
+        "provider": "AWS",
+        "region": "us-east-1",
+        "instanceType": "r5.4xlarge",
+        "status": "running",
+        "specs": {
+          "cpu": 16,
+          "memory": 131072,
+          "storage": 2000
+        },
+        "metrics": {
+          "cpuUtilization": 0.35,
+          "memoryUtilization": 0.78,
+          "networkIn": 45000000,
+          "networkOut": 125000000,
+          "iops": 15000,
+          "connections": 450
+        },
+        "tags": ["production", "database", "critical", "primary"]
+      },
+      {
+        "id": "srv-005",
+        "name": "db-prod-replica",
+        "type": "database",
+        "provider": "AWS",
+        "region": "us-east-1",
+        "instanceType": "r5.4xlarge",
+        "status": "running",
+        "specs": {
+          "cpu": 16,
+          "memory": 131072,
+          "storage": 2000
+        },
+        "metrics": {
+          "cpuUtilization": 0.28,
+          "memoryUtilization": 0.72,
+          "networkIn": 125000000,
+          "networkOut": 35000000,
+          "iops": 8000,
+          "connections": 280,
+          "replicationLag": 0.5
+        },
+        "tags": ["production", "database", "replica"]
+      },
+      {
+        "id": "srv-006",
+        "name": "cache-prod-1",
+        "type": "cache",
+        "provider": "AWS",
+        "region": "us-east-1",
+        "instanceType": "r6g.xlarge",
+        "status": "running",
+        "specs": {
+          "cpu": 4,
+          "memory": 32768,
+          "storage": 0
+        },
+        "metrics": {
+          "cpuUtilization": 0.22,
+          "memoryUtilization": 0.85,
+          "networkIn": 250000000,
+          "networkOut": 380000000,
+          "hitRate": 0.94,
+          "evictions": 1200
+        },
+        "tags": ["production", "cache", "redis"]
+      },
+      {
+        "id": "srv-007",
+        "name": "worker-prod-1",
+        "type": "worker",
+        "provider": "AWS",
+        "region": "us-east-1",
+        "instanceType": "c5.xlarge",
+        "status": "running",
+        "specs": {
+          "cpu": 4,
+          "memory": 8192,
+          "storage": 200
+        },
+        "metrics": {
+          "cpuUtilization": 0.68,
+          "memoryUtilization": 0.45,
+          "networkIn": 35000000,
+          "networkOut": 28000000,
+          "jobsProcessed": 45000,
+          "queueDepth": 120
+        },
+        "tags": ["production", "worker", "background-jobs"]
+      },
+      {
+        "id": "srv-008",
+        "name": "worker-prod-2",
+        "type": "worker",
+        "provider": "AWS",
+        "region": "us-east-1",
+        "instanceType": "c5.xlarge",
+        "status": "running",
+        "specs": {
+          "cpu": 4,
+          "memory": 8192,
+          "storage": 200
+        },
+        "metrics": {
+          "cpuUtilization": 0.72,
+          "memoryUtilization": 0.48,
+          "networkIn": 38000000,
+          "networkOut": 31000000,
+          "jobsProcessed": 48000,
+          "queueDepth": 95
+        },
+        "tags": ["production", "worker", "background-jobs"]
+      }
+    ],
+    "databases": [
+      {
+        "id": "db-001",
+        "name": "main-production",
+        "engine": "PostgreSQL",
+        "version": "15.4",
+        "status": "available",
+        "size": 1500,
+        "connections": {
+          "max": 1000,
+          "current": 450,
+          "available": 550
+        },
+        "performance": {
+          "queryLatencyP50": 2.5,
+          "queryLatencyP99": 45.0,
+          "transactionsPerSecond": 2500,
+          "deadlocks": 0
+        },
+        "backup": {
+          "lastBackup": "2024-01-16T02:00:00Z",
+          "backupRetention": 30,
+          "pointInTimeRecovery": true
+        }
+      },
+      {
+        "id": "db-002",
+        "name": "analytics-warehouse",
+        "engine": "PostgreSQL",
+        "version": "15.4",
+        "status": "available",
+        "size": 5000,
+        "connections": {
+          "max": 500,
+          "current": 125,
+          "available": 375
+        },
+        "performance": {
+          "queryLatencyP50": 150.0,
+          "queryLatencyP99": 2500.0,
+          "transactionsPerSecond": 50,
+          "deadlocks": 0
+        },
+        "backup": {
+          "lastBackup": "2024-01-16T03:00:00Z",
+          "backupRetention": 90,
+          "pointInTimeRecovery": true
+        }
+      }
+    ],
+    "kubernetes": {
+      "clusters": [
+        {
+          "name": "prod-cluster-east",
+          "region": "us-east-1",
+          "version": "1.28",
+          "status": "active",
+          "nodes": {
+            "total": 12,
+            "ready": 12,
+            "notReady": 0
+          },
+          "resources": {
+            "cpuCapacity": 96,
+            "cpuRequested": 72,
+            "cpuUtilization": 0.65,
+            "memoryCapacity": 393216,
+            "memoryRequested": 294912,
+            "memoryUtilization": 0.68
+          },
+          "namespaces": [
+            {
+              "name": "production",
+              "pods": 45,
+              "services": 12,
+              "deployments": 8
+            },
+            {
+              "name": "monitoring",
+              "pods": 15,
+              "services": 5,
+              "deployments": 4
+            },
+            {
+              "name": "ingress",
+              "pods": 6,
+              "services": 2,
+              "deployments": 1
+            }
+          ]
+        },
+        {
+          "name": "prod-cluster-west",
+          "region": "us-west-2",
+          "version": "1.28",
+          "status": "active",
+          "nodes": {
+            "total": 8,
+            "ready": 8,
+            "notReady": 0
+          },
+          "resources": {
+            "cpuCapacity": 64,
+            "cpuRequested": 42,
+            "cpuUtilization": 0.55,
+            "memoryCapacity": 262144,
+            "memoryRequested": 163840,
+            "memoryUtilization": 0.58
+          },
+          "namespaces": [
+            {
+              "name": "production",
+              "pods": 30,
+              "services": 10,
+              "deployments": 6
+            },
+            {
+              "name": "monitoring",
+              "pods": 10,
+              "services": 4,
+              "deployments": 3
+            }
+          ]
+        }
+      ]
+    },
+    "monitoring": {
+      "alerts": [
+        {
+          "id": "alert-001",
+          "name": "High CPU Usage",
+          "severity": "warning",
+          "status": "firing",
+          "target": "srv-007",
+          "threshold": 0.7,
+          "currentValue": 0.72,
+          "startedAt": "2024-01-16T14:30:00Z",
+          "labels": {
+            "team": "platform",
+            "environment": "production"
+          }
+        },
+        {
+          "id": "alert-002",
+          "name": "Database Connection Pool",
+          "severity": "info",
+          "status": "resolved",
+          "target": "db-001",
+          "threshold": 0.8,
+          "currentValue": 0.45,
+          "startedAt": "2024-01-15T10:00:00Z",
+          "resolvedAt": "2024-01-15T10:15:00Z",
+          "labels": {
+            "team": "database",
+            "environment": "production"
+          }
+        }
+      ],
+      "dashboards": [
+        {
+          "id": "dash-001",
+          "name": "System Overview",
+          "panels": 12,
+          "refreshRate": 30,
+          "viewers": ["engineering", "sre", "management"]
+        },
+        {
+          "id": "dash-002",
+          "name": "API Performance",
+          "panels": 8,
+          "refreshRate": 10,
+          "viewers": ["engineering", "sre"]
+        },
+        {
+          "id": "dash-003",
+          "name": "Database Metrics",
+          "panels": 15,
+          "refreshRate": 60,
+          "viewers": ["database", "sre"]
+        },
+        {
+          "id": "dash-004",
+          "name": "Business KPIs",
+          "panels": 10,
+          "refreshRate": 300,
+          "viewers": ["management", "product"]
+        }
+      ]
+    }
+  },
+  "settings": {
+    "global": {
+      "timezone": "America/New_York",
+      "locale": "en-US",
+      "currency": "USD",
+      "dateFormat": "YYYY-MM-DD",
+      "timeFormat": "HH:mm:ss"
+    },
+    "security": {
+      "passwordPolicy": {
+        "minLength": 12,
+        "requireUppercase": true,
+        "requireLowercase": true,
+        "requireNumbers": true,
+        "requireSpecialChars": true,
+        "maxAge": 90,
+        "preventReuse": 5
+      },
+      "sessionPolicy": {
+        "maxDuration": 28800,
+        "idleTimeout": 1800,
+        "concurrentSessions": 3,
+        "requireMfa": true
+      },
+      "ipWhitelist": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16"
+      ],
+      "auditLog": {
+        "enabled": true,
+        "retention": 365,
+        "includeReadOperations": false
+      }
+    },
+    "notifications": {
+      "email": {
+        "enabled": true,
+        "provider": "sendgrid",
+        "fromAddress": "noreply@techcorp.com",
+        "templates": {
+          "welcome": "tmpl-001",
+          "passwordReset": "tmpl-002",
+          "invoice": "tmpl-003",
+          "alert": "tmpl-004"
+        }
+      },
+      "slack": {
+        "enabled": true,
+        "workspace": "techcorp",
+        "channels": {
+          "alerts": "#ops-alerts",
+          "deployments": "#deployments",
+          "support": "#customer-support"
+        }
+      },
+      "pagerduty": {
+        "enabled": true,
+        "serviceKey": "pd-service-key-xxx",
+        "escalationPolicy": "default"
+      }
+    },
+    "integrations": {
+      "github": {
+        "enabled": true,
+        "organization": "techcorp",
+        "webhookSecret": "gh-webhook-secret-xxx",
+        "autoMerge": false
+      },
+      "jira": {
+        "enabled": true,
+        "instance": "techcorp.atlassian.net",
+        "projectKey": "TECH",
+        "issueTypes": ["Bug", "Story", "Task", "Epic"]
+      },
+      "datadog": {
+        "enabled": true,
+        "apiKey": "dd-api-key-xxx",
+        "appKey": "dd-app-key-xxx",
+        "site": "datadoghq.com"
+      }
+    },
+    "featureFlags": {
+      "newDashboard": {
+        "enabled": true,
+        "rolloutPercentage": 50,
+        "allowList": ["cust-001", "cust-002"],
+        "denyList": []
+      },
+      "betaApi": {
+        "enabled": true,
+        "rolloutPercentage": 10,
+        "allowList": [],
+        "denyList": ["cust-005"]
+      },
+      "experimentalSearch": {
+        "enabled": false,
+        "rolloutPercentage": 0,
+        "allowList": [],
+        "denyList": []
+      },
+      "aiAssistant": {
+        "enabled": true,
+        "rolloutPercentage": 25,
+        "allowList": ["cust-001"],
+        "denyList": []
+      }
+    }
+  },
+  "audit": {
+    "recentEvents": [
+      {
+        "id": "evt-001",
+        "timestamp": "2024-01-16T15:30:00Z",
+        "actor": "emp-001",
+        "action": "user.create",
+        "resource": "emp-999",
+        "resourceType": "employee",
+        "ipAddress": "10.0.1.50",
+        "userAgent": "Mozilla/5.0",
+        "status": "success",
+        "metadata": {
+          "department": "Engineering",
+          "role": "Developer"
+        }
+      },
+      {
+        "id": "evt-002",
+        "timestamp": "2024-01-16T15:25:00Z",
+        "actor": "emp-402",
+        "action": "subscription.update",
+        "resource": "sub-123",
+        "resourceType": "subscription",
+        "ipAddress": "10.0.2.30",
+        "userAgent": "Mozilla/5.0",
+        "status": "success",
+        "metadata": {
+          "customerId": "cust-002",
+          "previousPlan": "Professional",
+          "newPlan": "Enterprise"
+        }
+      },
+      {
+        "id": "evt-003",
+        "timestamp": "2024-01-16T15:20:00Z",
+        "actor": "system",
+        "action": "backup.complete",
+        "resource": "db-001",
+        "resourceType": "database",
+        "ipAddress": null,
+        "userAgent": null,
+        "status": "success",
+        "metadata": {
+          "backupSize": 1500000000,
+          "duration": 1800
+        }
+      },
+      {
+        "id": "evt-004",
+        "timestamp": "2024-01-16T15:15:00Z",
+        "actor": "emp-301",
+        "action": "deployment.start",
+        "resource": "deploy-456",
+        "resourceType": "deployment",
+        "ipAddress": "10.0.3.20",
+        "userAgent": "Jenkins/2.400",
+        "status": "success",
+        "metadata": {
+          "version": "3.5.2",
+          "environment": "production",
+          "services": ["api", "worker"]
+        }
+      },
+      {
+        "id": "evt-005",
+        "timestamp": "2024-01-16T15:10:00Z",
+        "actor": "emp-601",
+        "action": "login.success",
+        "resource": "emp-601",
+        "resourceType": "employee",
+        "ipAddress": "203.0.113.50",
+        "userAgent": "Mozilla/5.0",
+        "status": "success",
+        "metadata": {
+          "mfaUsed": true,
+          "location": "New York, US"
+        }
+      },
+      {
+        "id": "evt-006",
+        "timestamp": "2024-01-16T15:05:00Z",
+        "actor": "unknown",
+        "action": "login.failed",
+        "resource": null,
+        "resourceType": "employee",
+        "ipAddress": "198.51.100.100",
+        "userAgent": "curl/7.68.0",
+        "status": "failure",
+        "metadata": {
+          "reason": "invalid_credentials",
+          "attemptedUsername": "admin"
+        }
+      },
+      {
+        "id": "evt-007",
+        "timestamp": "2024-01-16T15:00:00Z",
+        "actor": "emp-901",
+        "action": "policy.update",
+        "resource": "password-policy",
+        "resourceType": "security_policy",
+        "ipAddress": "10.0.1.100",
+        "userAgent": "Mozilla/5.0",
+        "status": "success",
+        "metadata": {
+          "changes": ["minLength: 10 -> 12", "maxAge: 120 -> 90"]
+        }
+      },
+      {
+        "id": "evt-008",
+        "timestamp": "2024-01-16T14:55:00Z",
+        "actor": "emp-201",
+        "action": "api_key.create",
+        "resource": "key-789",
+        "resourceType": "api_key",
+        "ipAddress": "10.0.2.50",
+        "userAgent": "Mozilla/5.0",
+        "status": "success",
+        "metadata": {
+          "keyName": "production-integration",
+          "permissions": ["read", "write"],
+          "expiresAt": "2025-01-16T14:55:00Z"
+        }
+      },
+      {
+        "id": "evt-009",
+        "timestamp": "2024-01-16T14:50:00Z",
+        "actor": "cust-001-user-123",
+        "action": "file.upload",
+        "resource": "file-abc",
+        "resourceType": "file",
+        "ipAddress": "203.0.113.75",
+        "userAgent": "CloudSync/3.5.2",
+        "status": "success",
+        "metadata": {
+          "fileName": "quarterly-report.pdf",
+          "fileSize": 2500000,
+          "mimeType": "application/pdf"
+        }
+      },
+      {
+        "id": "evt-010",
+        "timestamp": "2024-01-16T14:45:00Z",
+        "actor": "system",
+        "action": "alert.triggered",
+        "resource": "alert-001",
+        "resourceType": "alert",
+        "ipAddress": null,
+        "userAgent": null,
+        "status": "success",
+        "metadata": {
+          "alertName": "High CPU Usage",
+          "severity": "warning",
+          "target": "srv-007"
+        }
+      }
+    ]
+  },
+  "orders": [
+    {
+      "id": "ord-001",
+      "customerId": "cust-001",
+      "createdAt": "2024-01-15T10:00:00Z",
+      "status": "completed",
+      "total": 15000.00,
+      "currency": "USD",
+      "items": [
+        {
+          "productId": "prod-001",
+          "plan": "Enterprise",
+          "quantity": 100,
+          "unitPrice": 99.99,
+          "subtotal": 9999.00,
+          "discount": {
+            "type": "percentage",
+            "value": 10,
+            "reason": "Annual commitment"
+          }
+        },
+        {
+          "productId": "prod-003",
+          "plan": "Business",
+          "quantity": 50,
+          "unitPrice": 100.00,
+          "subtotal": 5000.00,
+          "discount": null
+        }
+      ],
+      "billing": {
+        "address": {
+          "street": "456 Corporate Blvd",
+          "city": "Chicago",
+          "state": "IL",
+          "zipCode": "60601",
+          "country": "USA"
+        },
+        "paymentMethod": "invoice",
+        "terms": "net30"
+      },
+      "shipping": null
+    },
+    {
+      "id": "ord-002",
+      "customerId": "cust-002",
+      "createdAt": "2024-01-14T14:30:00Z",
+      "status": "completed",
+      "total": 7500.00,
+      "currency": "USD",
+      "items": [
+        {
+          "productId": "prod-002",
+          "plan": "Advanced",
+          "quantity": 50,
+          "unitPrice": 149.99,
+          "subtotal": 7499.50,
+          "discount": null
+        }
+      ],
+      "billing": {
+        "address": {
+          "street": "789 Tech Park",
+          "city": "Austin",
+          "state": "TX",
+          "zipCode": "78701",
+          "country": "USA"
+        },
+        "paymentMethod": "credit_card",
+        "terms": "immediate"
+      },
+      "shipping": null
+    },
+    {
+      "id": "ord-003",
+      "customerId": "cust-003",
+      "createdAt": "2024-01-13T09:15:00Z",
+      "status": "pending",
+      "total": 1200.00,
+      "currency": "USD",
+      "items": [
+        {
+          "productId": "prod-001",
+          "plan": "Professional",
+          "quantity": 40,
+          "unitPrice": 29.99,
+          "subtotal": 1199.60,
+          "discount": null
+        }
+      ],
+      "billing": {
+        "address": {
+          "street": "101 Startup Lane",
+          "city": "San Jose",
+          "state": "CA",
+          "zipCode": "95110",
+          "country": "USA"
+        },
+        "paymentMethod": "credit_card",
+        "terms": "immediate"
+      },
+      "shipping": null
+    },
+    {
+      "id": "ord-004",
+      "customerId": "cust-004",
+      "createdAt": "2024-01-12T16:45:00Z",
+      "status": "completed",
+      "total": 30000.00,
+      "currency": "USD",
+      "items": [
+        {
+          "productId": "prod-003",
+          "plan": "Enterprise",
+          "quantity": 2000,
+          "unitPrice": 15.00,
+          "subtotal": 30000.00,
+          "discount": null
+        }
+      ],
+      "billing": {
+        "address": {
+          "street": "555 Medical Center Dr",
+          "city": "Boston",
+          "state": "MA",
+          "zipCode": "02115",
+          "country": "USA"
+        },
+        "paymentMethod": "invoice",
+        "terms": "net45"
+      },
+      "shipping": null
+    },
+    {
+      "id": "ord-005",
+      "customerId": "cust-001",
+      "createdAt": "2024-01-10T11:20:00Z",
+      "status": "completed",
+      "total": 5000.00,
+      "currency": "USD",
+      "items": [
+        {
+          "productId": "prod-002",
+          "plan": "Advanced",
+          "quantity": 25,
+          "unitPrice": 149.99,
+          "subtotal": 3749.75,
+          "discount": null
+        },
+        {
+          "productId": "prod-001",
+          "plan": "Professional",
+          "quantity": 50,
+          "unitPrice": 29.99,
+          "subtotal": 1499.50,
+          "discount": {
+            "type": "fixed",
+            "value": 250,
+            "reason": "Loyalty discount"
+          }
+        }
+      ],
+      "billing": {
+        "address": {
+          "street": "456 Corporate Blvd",
+          "city": "Chicago",
+          "state": "IL",
+          "zipCode": "60601",
+          "country": "USA"
+        },
+        "paymentMethod": "invoice",
+        "terms": "net30"
+      },
+      "shipping": null
+    }
+  ],
+  "logs": {
+    "application": [
+      {
+        "timestamp": "2024-01-16T15:59:59Z",
+        "level": "INFO",
+        "service": "api-gateway",
+        "message": "Request processed successfully",
+        "context": {
+          "requestId": "req-abc-123",
+          "method": "GET",
+          "path": "/api/v1/users",
+          "statusCode": 200,
+          "responseTime": 45,
+          "userId": "user-456"
+        }
+      },
+      {
+        "timestamp": "2024-01-16T15:59:58Z",
+        "level": "WARN",
+        "service": "auth-service",
+        "message": "Rate limit approaching threshold",
+        "context": {
+          "clientId": "client-789",
+          "currentRate": 95,
+          "maxRate": 100,
+          "windowSize": 60
+        }
+      },
+      {
+        "timestamp": "2024-01-16T15:59:57Z",
+        "level": "ERROR",
+        "service": "payment-service",
+        "message": "Payment processing failed",
+        "context": {
+          "orderId": "ord-999",
+          "errorCode": "CARD_DECLINED",
+          "retryCount": 2,
+          "provider": "stripe"
+        },
+        "stackTrace": "PaymentError: Card was declined\n    at processPayment (payment.js:156)\n    at handleOrder (orders.js:89)\n    at Router.handle (router.js:45)"
+      },
+      {
+        "timestamp": "2024-01-16T15:59:56Z",
+        "level": "DEBUG",
+        "service": "sync-worker",
+        "message": "File sync completed",
+        "context": {
+          "jobId": "job-def-456",
+          "filesProcessed": 150,
+          "bytesTransferred": 52428800,
+          "duration": 12500
+        }
+      },
+      {
+        "timestamp": "2024-01-16T15:59:55Z",
+        "level": "INFO",
+        "service": "notification-service",
+        "message": "Email sent successfully",
+        "context": {
+          "templateId": "tmpl-002",
+          "recipient": "user@example.com",
+          "provider": "sendgrid",
+          "messageId": "msg-xyz-789"
+        }
+      },
+      {
+        "timestamp": "2024-01-16T15:59:54Z",
+        "level": "INFO",
+        "service": "api-gateway",
+        "message": "Request processed successfully",
+        "context": {
+          "requestId": "req-abc-124",
+          "method": "POST",
+          "path": "/api/v1/files",
+          "statusCode": 201,
+          "responseTime": 230,
+          "userId": "user-789"
+        }
+      },
+      {
+        "timestamp": "2024-01-16T15:59:53Z",
+        "level": "WARN",
+        "service": "cache-service",
+        "message": "Cache miss rate increasing",
+        "context": {
+          "currentHitRate": 0.85,
+          "expectedHitRate": 0.95,
+          "cacheSize": 1073741824,
+          "evictionCount": 5000
+        }
+      },
+      {
+        "timestamp": "2024-01-16T15:59:52Z",
+        "level": "INFO",
+        "service": "search-service",
+        "message": "Index rebuild completed",
+        "context": {
+          "indexName": "documents",
+          "documentsIndexed": 250000,
+          "duration": 180000,
+          "sizeBytes": 536870912
+        }
+      },
+      {
+        "timestamp": "2024-01-16T15:59:51Z",
+        "level": "ERROR",
+        "service": "integration-service",
+        "message": "External API timeout",
+        "context": {
+          "integration": "salesforce",
+          "endpoint": "/services/data/v55.0/sobjects",
+          "timeout": 30000,
+          "retryAttempt": 3
+        },
+        "stackTrace": "TimeoutError: Request timed out after 30000ms\n    at fetch (http.js:234)\n    at SalesforceClient.request (salesforce.js:67)\n    at syncContacts (sync.js:123)"
+      },
+      {
+        "timestamp": "2024-01-16T15:59:50Z",
+        "level": "INFO",
+        "service": "metrics-collector",
+        "message": "Metrics batch sent",
+        "context": {
+          "metricsCount": 500,
+          "destination": "datadog",
+          "batchSize": 50,
+          "duration": 250
+        }
+      }
+    ],
+    "access": [
+      {
+        "timestamp": "2024-01-16T15:59:59Z",
+        "remoteAddr": "203.0.113.50",
+        "method": "GET",
+        "path": "/api/v1/dashboard",
+        "protocol": "HTTP/2.0",
+        "statusCode": 200,
+        "bodyBytes": 15234,
+        "referer": "https://app.techcorp.com/",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+        "responseTime": 0.045
+      },
+      {
+        "timestamp": "2024-01-16T15:59:58Z",
+        "remoteAddr": "198.51.100.25",
+        "method": "POST",
+        "path": "/api/v1/files/upload",
+        "protocol": "HTTP/2.0",
+        "statusCode": 201,
+        "bodyBytes": 89,
+        "referer": "https://app.techcorp.com/files",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "responseTime": 1.234
+      },
+      {
+        "timestamp": "2024-01-16T15:59:57Z",
+        "remoteAddr": "203.0.113.100",
+        "method": "GET",
+        "path": "/api/v1/users/me",
+        "protocol": "HTTP/2.0",
+        "statusCode": 200,
+        "bodyBytes": 2048,
+        "referer": null,
+        "userAgent": "CloudSync/3.5.2",
+        "responseTime": 0.023
+      },
+      {
+        "timestamp": "2024-01-16T15:59:56Z",
+        "remoteAddr": "192.0.2.50",
+        "method": "DELETE",
+        "path": "/api/v1/files/abc123",
+        "protocol": "HTTP/2.0",
+        "statusCode": 204,
+        "bodyBytes": 0,
+        "referer": "https://app.techcorp.com/files",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0)",
+        "responseTime": 0.089
+      },
+      {
+        "timestamp": "2024-01-16T15:59:55Z",
+        "remoteAddr": "198.51.100.75",
+        "method": "GET",
+        "path": "/api/v1/analytics/overview",
+        "protocol": "HTTP/2.0",
+        "statusCode": 200,
+        "bodyBytes": 45678,
+        "referer": "https://app.techcorp.com/analytics",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64)",
+        "responseTime": 0.567
+      },
+      {
+        "timestamp": "2024-01-16T15:59:54Z",
+        "remoteAddr": "203.0.113.200",
+        "method": "PUT",
+        "path": "/api/v1/settings/notifications",
+        "protocol": "HTTP/2.0",
+        "statusCode": 200,
+        "bodyBytes": 256,
+        "referer": "https://app.techcorp.com/settings",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+        "responseTime": 0.078
+      },
+      {
+        "timestamp": "2024-01-16T15:59:53Z",
+        "remoteAddr": "192.0.2.100",
+        "method": "GET",
+        "path": "/api/v1/search",
+        "protocol": "HTTP/2.0",
+        "statusCode": 200,
+        "bodyBytes": 12890,
+        "referer": "https://app.techcorp.com/files",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "responseTime": 0.234
+      },
+      {
+        "timestamp": "2024-01-16T15:59:52Z",
+        "remoteAddr": "198.51.100.150",
+        "method": "POST",
+        "path": "/api/v1/auth/refresh",
+        "protocol": "HTTP/2.0",
+        "statusCode": 200,
+        "bodyBytes": 512,
+        "referer": null,
+        "userAgent": "DataVault/2.1.0",
+        "responseTime": 0.156
+      },
+      {
+        "timestamp": "2024-01-16T15:59:51Z",
+        "remoteAddr": "203.0.113.75",
+        "method": "GET",
+        "path": "/health",
+        "protocol": "HTTP/1.1",
+        "statusCode": 200,
+        "bodyBytes": 23,
+        "referer": null,
+        "userAgent": "kube-probe/1.28",
+        "responseTime": 0.002
+      },
+      {
+        "timestamp": "2024-01-16T15:59:50Z",
+        "remoteAddr": "192.0.2.200",
+        "method": "GET",
+        "path": "/api/v1/reports/monthly",
+        "protocol": "HTTP/2.0",
+        "statusCode": 200,
+        "bodyBytes": 89012,
+        "referer": "https://app.techcorp.com/reports",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+        "responseTime": 2.345
+      }
+    ],
+    "security": [
+      {
+        "timestamp": "2024-01-16T15:55:00Z",
+        "eventType": "authentication",
+        "outcome": "success",
+        "userId": "user-456",
+        "ipAddress": "203.0.113.50",
+        "location": {
+          "city": "San Francisco",
+          "region": "California",
+          "country": "US",
+          "coordinates": {
+            "lat": 37.7749,
+            "lon": -122.4194
+          }
+        },
+        "device": {
+          "type": "desktop",
+          "os": "macOS",
+          "browser": "Chrome"
+        },
+        "mfaUsed": true,
+        "sessionId": "sess-abc-123"
+      },
+      {
+        "timestamp": "2024-01-16T15:50:00Z",
+        "eventType": "authentication",
+        "outcome": "failure",
+        "userId": null,
+        "ipAddress": "198.51.100.100",
+        "location": {
+          "city": "Unknown",
+          "region": "Unknown",
+          "country": "RU",
+          "coordinates": null
+        },
+        "device": {
+          "type": "unknown",
+          "os": "unknown",
+          "browser": "curl"
+        },
+        "mfaUsed": false,
+        "reason": "invalid_credentials",
+        "attemptedUsername": "admin@techcorp.com"
+      },
+      {
+        "timestamp": "2024-01-16T15:45:00Z",
+        "eventType": "authorization",
+        "outcome": "denied",
+        "userId": "user-789",
+        "ipAddress": "192.0.2.50",
+        "resource": "/api/v1/admin/users",
+        "action": "DELETE",
+        "reason": "insufficient_permissions",
+        "requiredRole": "admin",
+        "userRole": "member"
+      },
+      {
+        "timestamp": "2024-01-16T15:40:00Z",
+        "eventType": "password_change",
+        "outcome": "success",
+        "userId": "user-123",
+        "ipAddress": "203.0.113.75",
+        "location": {
+          "city": "New York",
+          "region": "New York",
+          "country": "US",
+          "coordinates": {
+            "lat": 40.7128,
+            "lon": -74.0060
+          }
+        },
+        "device": {
+          "type": "mobile",
+          "os": "iOS",
+          "browser": "Safari"
+        },
+        "mfaUsed": true
+      },
+      {
+        "timestamp": "2024-01-16T15:35:00Z",
+        "eventType": "api_key_created",
+        "outcome": "success",
+        "userId": "user-456",
+        "ipAddress": "203.0.113.50",
+        "keyId": "key-xyz-789",
+        "keyName": "CI/CD Pipeline",
+        "permissions": ["read:files", "write:files"],
+        "expiresAt": "2025-01-16T15:35:00Z"
+      },
+      {
+        "timestamp": "2024-01-16T15:30:00Z",
+        "eventType": "suspicious_activity",
+        "outcome": "flagged",
+        "userId": "user-999",
+        "ipAddress": "192.0.2.150",
+        "reason": "multiple_failed_logins",
+        "details": {
+          "failedAttempts": 5,
+          "timeWindow": 300,
+          "action": "account_locked"
+        }
+      },
+      {
+        "timestamp": "2024-01-16T15:25:00Z",
+        "eventType": "mfa_enrollment",
+        "outcome": "success",
+        "userId": "user-555",
+        "ipAddress": "198.51.100.25",
+        "method": "authenticator_app",
+        "deviceName": "iPhone 15 Pro"
+      },
+      {
+        "timestamp": "2024-01-16T15:20:00Z",
+        "eventType": "session_revoked",
+        "outcome": "success",
+        "userId": "user-333",
+        "ipAddress": "203.0.113.100",
+        "revokedSessionId": "sess-old-456",
+        "reason": "user_initiated",
+        "revokedDevices": ["Chrome on Windows", "Safari on macOS"]
+      }
+    ]
+  },
+  "inventory": {
+    "categories": [
+      {
+        "id": "cat-001",
+        "name": "Cloud Services",
+        "description": "Cloud-based software and infrastructure services",
+        "products": ["prod-001", "prod-002", "prod-003"],
+        "totalRevenue": 1920000,
+        "growth": 0.34
+      },
+      {
+        "id": "cat-002",
+        "name": "Professional Services",
+        "description": "Implementation, training, and consulting services",
+        "products": [],
+        "totalRevenue": 450000,
+        "growth": 0.18
+      },
+      {
+        "id": "cat-003",
+        "name": "Support Plans",
+        "description": "Extended support and SLA packages",
+        "products": [],
+        "totalRevenue": 280000,
+        "growth": 0.25
+      }
+    ],
+    "warehouse": {
+      "locations": [
+        {
+          "id": "wh-001",
+          "name": "US East Data Center",
+          "region": "us-east-1",
+          "capacity": {
+            "compute": {
+              "total": 10000,
+              "used": 7500,
+              "available": 2500,
+              "unit": "vCPUs"
+            },
+            "storage": {
+              "total": 5000,
+              "used": 3200,
+              "available": 1800,
+              "unit": "TB"
+            },
+            "memory": {
+              "total": 40000,
+              "used": 28000,
+              "available": 12000,
+              "unit": "GB"
+            }
+          },
+          "status": "operational",
+          "lastMaintenance": "2024-01-01T02:00:00Z",
+          "nextMaintenance": "2024-04-01T02:00:00Z"
+        },
+        {
+          "id": "wh-002",
+          "name": "US West Data Center",
+          "region": "us-west-2",
+          "capacity": {
+            "compute": {
+              "total": 6000,
+              "used": 4200,
+              "available": 1800,
+              "unit": "vCPUs"
+            },
+            "storage": {
+              "total": 3000,
+              "used": 1800,
+              "available": 1200,
+              "unit": "TB"
+            },
+            "memory": {
+              "total": 24000,
+              "used": 16800,
+              "available": 7200,
+              "unit": "GB"
+            }
+          },
+          "status": "operational",
+          "lastMaintenance": "2023-12-15T02:00:00Z",
+          "nextMaintenance": "2024-03-15T02:00:00Z"
+        },
+        {
+          "id": "wh-003",
+          "name": "EU Central Data Center",
+          "region": "eu-central-1",
+          "capacity": {
+            "compute": {
+              "total": 4000,
+              "used": 2800,
+              "available": 1200,
+              "unit": "vCPUs"
+            },
+            "storage": {
+              "total": 2000,
+              "used": 1400,
+              "available": 600,
+              "unit": "TB"
+            },
+            "memory": {
+              "total": 16000,
+              "used": 11200,
+              "available": 4800,
+              "unit": "GB"
+            }
+          },
+          "status": "operational",
+          "lastMaintenance": "2023-11-20T02:00:00Z",
+          "nextMaintenance": "2024-02-20T02:00:00Z"
+        }
+      ],
+      "inventory_items": [
+        {
+          "sku": "HW-SRV-001",
+          "name": "Dell PowerEdge R750",
+          "category": "Server",
+          "quantity": 50,
+          "location": "wh-001",
+          "unitCost": 12000,
+          "status": "in_stock"
+        },
+        {
+          "sku": "HW-SRV-002",
+          "name": "HPE ProLiant DL380",
+          "category": "Server",
+          "quantity": 35,
+          "location": "wh-002",
+          "unitCost": 11500,
+          "status": "in_stock"
+        },
+        {
+          "sku": "HW-STR-001",
+          "name": "NetApp AFF A400",
+          "category": "Storage",
+          "quantity": 10,
+          "location": "wh-001",
+          "unitCost": 85000,
+          "status": "in_stock"
+        },
+        {
+          "sku": "HW-NET-001",
+          "name": "Cisco Nexus 9300",
+          "category": "Networking",
+          "quantity": 20,
+          "location": "wh-001",
+          "unitCost": 15000,
+          "status": "in_stock"
+        },
+        {
+          "sku": "HW-NET-002",
+          "name": "Arista 7050X3",
+          "category": "Networking",
+          "quantity": 15,
+          "location": "wh-002",
+          "unitCost": 18000,
+          "status": "low_stock"
+        }
+      ]
+    }
+  },
+  "workflows": [
+    {
+      "id": "wf-001",
+      "name": "Customer Onboarding",
+      "version": "2.3",
+      "status": "active",
+      "createdAt": "2023-01-15T10:00:00Z",
+      "updatedAt": "2024-01-10T14:30:00Z",
+      "steps": [
+        {
+          "id": "step-001",
+          "name": "Account Creation",
+          "type": "automated",
+          "order": 1,
+          "duration": 60,
+          "actions": [
+            {
+              "type": "create_account",
+              "params": {
+                "sendWelcomeEmail": true,
+                "assignDefaultPlan": true
+              }
+            },
+            {
+              "type": "provision_resources",
+              "params": {
+                "storageQuota": "5GB",
+                "userLimit": 5
+              }
+            }
+          ],
+          "conditions": [],
+          "onSuccess": "step-002",
+          "onFailure": "step-error"
+        },
+        {
+          "id": "step-002",
+          "name": "Welcome Call Scheduling",
+          "type": "manual",
+          "order": 2,
+          "duration": 1440,
+          "assignee": {
+            "type": "role",
+            "value": "customer_success"
+          },
+          "actions": [
+            {
+              "type": "send_notification",
+              "params": {
+                "template": "schedule_call",
+                "channels": ["email", "slack"]
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "field": "plan",
+              "operator": "in",
+              "value": ["Professional", "Enterprise"]
+            }
+          ],
+          "onSuccess": "step-003",
+          "onFailure": null
+        },
+        {
+          "id": "step-003",
+          "name": "Initial Training",
+          "type": "manual",
+          "order": 3,
+          "duration": 2880,
+          "assignee": {
+            "type": "team",
+            "value": "training"
+          },
+          "actions": [
+            {
+              "type": "schedule_training",
+              "params": {
+                "duration": 60,
+                "topics": ["basics", "integrations", "best_practices"]
+              }
+            }
+          ],
+          "conditions": [],
+          "onSuccess": "step-004",
+          "onFailure": null
+        },
+        {
+          "id": "step-004",
+          "name": "Integration Setup",
+          "type": "automated",
+          "order": 4,
+          "duration": 120,
+          "actions": [
+            {
+              "type": "configure_integrations",
+              "params": {
+                "defaultIntegrations": ["slack", "email"]
+              }
+            },
+            {
+              "type": "verify_setup",
+              "params": {
+                "checks": ["api_access", "storage", "auth"]
+              }
+            }
+          ],
+          "conditions": [],
+          "onSuccess": "step-005",
+          "onFailure": "step-error"
+        },
+        {
+          "id": "step-005",
+          "name": "Onboarding Complete",
+          "type": "automated",
+          "order": 5,
+          "duration": 5,
+          "actions": [
+            {
+              "type": "update_status",
+              "params": {
+                "status": "active"
+              }
+            },
+            {
+              "type": "send_notification",
+              "params": {
+                "template": "onboarding_complete",
+                "channels": ["email"]
+              }
+            }
+          ],
+          "conditions": [],
+          "onSuccess": null,
+          "onFailure": null
+        },
+        {
+          "id": "step-error",
+          "name": "Error Handling",
+          "type": "manual",
+          "order": 99,
+          "duration": 1440,
+          "assignee": {
+            "type": "role",
+            "value": "support"
+          },
+          "actions": [
+            {
+              "type": "create_ticket",
+              "params": {
+                "priority": "high",
+                "category": "onboarding_failure"
+              }
+            }
+          ],
+          "conditions": [],
+          "onSuccess": "step-001",
+          "onFailure": null
+        }
+      ],
+      "metrics": {
+        "totalRuns": 1250,
+        "successfulRuns": 1180,
+        "failedRuns": 70,
+        "averageDuration": 4320,
+        "p95Duration": 7200
+      }
+    },
+    {
+      "id": "wf-002",
+      "name": "Subscription Renewal",
+      "version": "1.5",
+      "status": "active",
+      "createdAt": "2023-06-01T09:00:00Z",
+      "updatedAt": "2024-01-05T11:15:00Z",
+      "steps": [
+        {
+          "id": "step-001",
+          "name": "Renewal Reminder",
+          "type": "automated",
+          "order": 1,
+          "duration": 5,
+          "actions": [
+            {
+              "type": "send_notification",
+              "params": {
+                "template": "renewal_reminder",
+                "channels": ["email"],
+                "timing": "-30d"
+              }
+            }
+          ],
+          "conditions": [],
+          "onSuccess": "step-002",
+          "onFailure": null
+        },
+        {
+          "id": "step-002",
+          "name": "Account Review",
+          "type": "manual",
+          "order": 2,
+          "duration": 4320,
+          "assignee": {
+            "type": "role",
+            "value": "account_manager"
+          },
+          "actions": [
+            {
+              "type": "review_usage",
+              "params": {
+                "period": "12m"
+              }
+            },
+            {
+              "type": "prepare_proposal",
+              "params": {
+                "includeDiscount": true
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "field": "contractValue",
+              "operator": ">=",
+              "value": 50000
+            }
+          ],
+          "onSuccess": "step-003",
+          "onFailure": null
+        },
+        {
+          "id": "step-003",
+          "name": "Process Renewal",
+          "type": "automated",
+          "order": 3,
+          "duration": 60,
+          "actions": [
+            {
+              "type": "generate_invoice",
+              "params": {
+                "applyDiscount": true
+              }
+            },
+            {
+              "type": "process_payment",
+              "params": {
+                "retryOnFailure": true,
+                "maxRetries": 3
+              }
+            }
+          ],
+          "conditions": [],
+          "onSuccess": "step-004",
+          "onFailure": "step-error"
+        },
+        {
+          "id": "step-004",
+          "name": "Confirmation",
+          "type": "automated",
+          "order": 4,
+          "duration": 5,
+          "actions": [
+            {
+              "type": "send_notification",
+              "params": {
+                "template": "renewal_confirmation",
+                "channels": ["email"]
+              }
+            },
+            {
+              "type": "update_contract",
+              "params": {
+                "extendBy": "12m"
+              }
+            }
+          ],
+          "conditions": [],
+          "onSuccess": null,
+          "onFailure": null
+        },
+        {
+          "id": "step-error",
+          "name": "Payment Failed",
+          "type": "manual",
+          "order": 99,
+          "duration": 2880,
+          "assignee": {
+            "type": "role",
+            "value": "billing"
+          },
+          "actions": [
+            {
+              "type": "send_notification",
+              "params": {
+                "template": "payment_failed",
+                "channels": ["email", "sms"]
+              }
+            },
+            {
+              "type": "create_ticket",
+              "params": {
+                "priority": "high",
+                "category": "billing"
+              }
+            }
+          ],
+          "conditions": [],
+          "onSuccess": "step-003",
+          "onFailure": null
+        }
+      ],
+      "metrics": {
+        "totalRuns": 890,
+        "successfulRuns": 845,
+        "failedRuns": 45,
+        "averageDuration": 5760,
+        "p95Duration": 10080
+      }
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "camp-001",
+      "name": "Q1 2024 Product Launch",
+      "type": "email",
+      "status": "active",
+      "startDate": "2024-01-01",
+      "endDate": "2024-03-31",
+      "budget": 50000,
+      "spent": 23500,
+      "targeting": {
+        "segments": ["enterprise", "mid-market"],
+        "industries": ["technology", "healthcare", "finance"],
+        "regions": ["north_america", "europe"]
+      },
+      "content": {
+        "subject": "Introducing CloudSync Pro 4.0",
+        "template": "product_launch_v2",
+        "assets": [
+          {
+            "type": "image",
+            "name": "hero_banner.png",
+            "dimensions": {"width": 1200, "height": 600}
+          },
+          {
+            "type": "video",
+            "name": "product_demo.mp4",
+            "duration": 120
+          }
+        ]
+      },
+      "metrics": {
+        "sent": 45000,
+        "delivered": 44100,
+        "opened": 15435,
+        "clicked": 4410,
+        "converted": 882,
+        "unsubscribed": 45,
+        "bounced": 900,
+        "openRate": 0.35,
+        "clickRate": 0.10,
+        "conversionRate": 0.02
+      },
+      "schedule": {
+        "sendTime": "09:00",
+        "timezone": "America/New_York",
+        "frequency": "weekly",
+        "days": ["tuesday", "thursday"]
+      }
+    },
+    {
+      "id": "camp-002",
+      "name": "Customer Retention Program",
+      "type": "multi-channel",
+      "status": "active",
+      "startDate": "2023-10-01",
+      "endDate": null,
+      "budget": 100000,
+      "spent": 67800,
+      "targeting": {
+        "segments": ["at_risk", "inactive_30d"],
+        "industries": null,
+        "regions": null
+      },
+      "content": {
+        "channels": [
+          {
+            "type": "email",
+            "template": "retention_offer",
+            "frequency": "bi-weekly"
+          },
+          {
+            "type": "in-app",
+            "template": "feature_highlight",
+            "frequency": "daily"
+          },
+          {
+            "type": "sms",
+            "template": "support_outreach",
+            "frequency": "monthly"
+          }
+        ]
+      },
+      "metrics": {
+        "totalReached": 12500,
+        "engaged": 8750,
+        "retained": 7500,
+        "churned": 1250,
+        "retentionRate": 0.86,
+        "costPerRetention": 9.04
+      }
+    },
+    {
+      "id": "camp-003",
+      "name": "Webinar Series - Security Best Practices",
+      "type": "event",
+      "status": "completed",
+      "startDate": "2023-11-15",
+      "endDate": "2023-12-15",
+      "budget": 25000,
+      "spent": 22350,
+      "targeting": {
+        "segments": ["enterprise", "security_focused"],
+        "industries": ["healthcare", "finance", "government"],
+        "regions": ["north_america"]
+      },
+      "events": [
+        {
+          "id": "evt-001",
+          "title": "Zero Trust Architecture Deep Dive",
+          "date": "2023-11-15",
+          "time": "14:00",
+          "duration": 60,
+          "registrations": 450,
+          "attendees": 312,
+          "satisfaction": 4.5
+        },
+        {
+          "id": "evt-002",
+          "title": "MFA Implementation Strategies",
+          "date": "2023-11-29",
+          "time": "14:00",
+          "duration": 45,
+          "registrations": 380,
+          "attendees": 275,
+          "satisfaction": 4.7
+        },
+        {
+          "id": "evt-003",
+          "title": "Compliance and Audit Readiness",
+          "date": "2023-12-13",
+          "time": "14:00",
+          "duration": 60,
+          "registrations": 520,
+          "attendees": 398,
+          "satisfaction": 4.6
+        }
+      ],
+      "metrics": {
+        "totalRegistrations": 1350,
+        "totalAttendees": 985,
+        "averageAttendance": 0.73,
+        "leadsGenerated": 245,
+        "pipelineValue": 450000
+      }
+    }
+  ],
+  "reports": {
+    "financial": {
+      "quarterly": [
+        {
+          "period": "Q4 2023",
+          "revenue": {
+            "total": 5760000,
+            "recurring": 5400000,
+            "services": 360000,
+            "growth": 0.12
+          },
+          "expenses": {
+            "total": 4200000,
+            "personnel": 2800000,
+            "infrastructure": 800000,
+            "marketing": 400000,
+            "other": 200000
+          },
+          "profit": {
+            "gross": 1560000,
+            "net": 1248000,
+            "margin": 0.217
+          }
+        },
+        {
+          "period": "Q3 2023",
+          "revenue": {
+            "total": 5140000,
+            "recurring": 4850000,
+            "services": 290000,
+            "growth": 0.09
+          },
+          "expenses": {
+            "total": 3900000,
+            "personnel": 2600000,
+            "infrastructure": 750000,
+            "marketing": 380000,
+            "other": 170000
+          },
+          "profit": {
+            "gross": 1240000,
+            "net": 992000,
+            "margin": 0.193
+          }
+        }
+      ]
+    },
+    "operational": {
+      "uptime": {
+        "current_month": {
+          "percentage": 99.98,
+          "totalMinutes": 44640,
+          "downtime": 9,
+          "incidents": [
+            {
+              "id": "inc-001",
+              "date": "2024-01-10",
+              "duration": 5,
+              "severity": "minor",
+              "service": "api-gateway",
+              "description": "Brief API latency spike",
+              "rootCause": "Database connection pool exhaustion",
+              "resolution": "Increased pool size and added monitoring"
+            },
+            {
+              "id": "inc-002",
+              "date": "2024-01-15",
+              "duration": 4,
+              "severity": "minor",
+              "service": "cdn",
+              "description": "CDN cache invalidation delay",
+              "rootCause": "Upstream provider issue",
+              "resolution": "Provider resolved, added redundant cache"
+            }
+          ]
+        },
+        "historical": [
+          {"month": "2023-12", "percentage": 99.99, "downtime": 4},
+          {"month": "2023-11", "percentage": 99.97, "downtime": 13},
+          {"month": "2023-10", "percentage": 99.99, "downtime": 5},
+          {"month": "2023-09", "percentage": 99.95, "downtime": 22},
+          {"month": "2023-08", "percentage": 99.98, "downtime": 9},
+          {"month": "2023-07", "percentage": 99.99, "downtime": 3}
+        ]
+      },
+      "performance": {
+        "api": {
+          "p50_latency": 45,
+          "p95_latency": 120,
+          "p99_latency": 250,
+          "error_rate": 0.001,
+          "requests_per_second": 2500
+        },
+        "database": {
+          "query_p50": 2.5,
+          "query_p95": 15,
+          "query_p99": 45,
+          "connections_avg": 450,
+          "replication_lag": 0.5
+        }
+      }
+    },
+    "customer_success": {
+      "satisfaction": {
+        "nps": {
+          "current": 72,
+          "previous": 68,
+          "trend": "up",
+          "responses": 1250,
+          "breakdown": {
+            "promoters": 750,
+            "passives": 375,
+            "detractors": 125
+          }
+        },
+        "csat": {
+          "current": 4.5,
+          "previous": 4.3,
+          "responses": 3200,
+          "by_category": {
+            "product": 4.6,
+            "support": 4.4,
+            "onboarding": 4.3,
+            "documentation": 4.2
+          }
+        }
+      },
+      "support": {
+        "tickets": {
+          "total": 1850,
+          "open": 125,
+          "pending": 45,
+          "resolved": 1680,
+          "by_priority": {
+            "critical": 15,
+            "high": 85,
+            "medium": 520,
+            "low": 1230
+          }
+        },
+        "response_times": {
+          "first_response_avg": 2.5,
+          "resolution_avg": 18.5,
+          "by_priority": {
+            "critical": {"first_response": 0.25, "resolution": 4},
+            "high": {"first_response": 1, "resolution": 8},
+            "medium": {"first_response": 4, "resolution": 24},
+            "low": {"first_response": 8, "resolution": 48}
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "generatedAt": "2024-01-16T16:00:00Z",
+    "exportedBy": "system",
+    "checksum": "sha256:abc123def456789",
+    "recordCounts": {
+      "departments": 4,
+      "employees": 25,
+      "products": 3,
+      "customers": 5,
+      "servers": 8,
+      "alerts": 2,
+      "orders": 5,
+      "campaigns": 3,
+      "workflows": 2
+    }
+  }
+}

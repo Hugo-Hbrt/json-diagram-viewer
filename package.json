@@ -53,6 +53,8 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
+    "clean": "rm -rf out webview-ui/dist",
+    "rebuild": "npm run clean && npm run compile",
     "compile": "npm run compile:webview && tsc -p ./",
     "compile:webview": "cd webview-ui && npm run build",
     "watch": "tsc -watch -p ./",
