@@ -5,7 +5,7 @@ interface UseCollapsibleReturn {
   toggle: () => void;
 }
 
-export function useCollapsible(initialState = false): UseCollapsibleReturn {
+export function useCollapsible(initialState = true): UseCollapsibleReturn {
   const [isCollapsed, setIsCollapsed] = useState(initialState);
 
   const toggle = useCallback(() => {
