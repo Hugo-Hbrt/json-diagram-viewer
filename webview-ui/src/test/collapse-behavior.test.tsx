@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { JsonNode } from '../components/JsonNode';
 
@@ -94,6 +94,25 @@ describe('Collapse behavior', () => {
       // and should not show a toggle triangle
       const toggles = container.querySelectorAll('.toggle');
       expect(toggles.length).toBe(0);
+    });
+
+    it('should not render toggle triangle for empty array cards', () => {
+      const data = {
+        items: [],
+      };
+
+      const { container } = render(
+        <JsonNode nodeKey="root" value={data} path={[]} isRoot />
+      );
+
+      // Expand the root to reveal the empty array card
+      const rootHeader = container.querySelector('.card-header');
+      fireEvent.click(rootHeader!);
+
+      // Root has one complex property (the array), so it shows a toggle
+      // But the empty array card itself should not show a toggle
+      const toggles = container.querySelectorAll('.toggle');
+      expect(toggles.length).toBe(1); // Only root's toggle, not the empty array's
     });
   });
 });
