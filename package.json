@@ -61,7 +61,9 @@
     "watch:webview": "cd webview-ui && npm run dev",
     "lint": "eslint src --ext ts",
     "pretest": "npm run compile",
-    "test": "node ./out/test/runTest.js",
+    "test": "npm run test:webview && npm run test:extension",
+    "test:webview": "cd webview-ui && npm test -- --run",
+    "test:extension": "node ./out/test/runTest.js",
     "postinstall": "cd webview-ui && npm install"
   },
   "devDependencies": {
