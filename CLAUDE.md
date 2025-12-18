@@ -35,3 +35,31 @@ This is a VS Code extension that visualizes JSON files as interactive tree diagr
 - Primitives displayed inline in cards; objects/arrays expand as child cards
 - Card types (root, array-item, nested-object, array, object) have distinct header colors
 - Collapse state tracked in a `Set` and preserved across re-renders
+
+## Commit Convention
+
+This project uses [Conventional Commits](https://conventionalcommits.org) for automated changelog generation via release-please.
+
+**Format:** `<type>(<scope>): <description>`
+
+**Types:**
+- `feat:` - New feature (triggers minor version bump)
+- `fix:` - Bug fix (triggers patch version bump)
+- `docs:` - Documentation only
+- `style:` - Code style changes (formatting, no logic change)
+- `refactor:` - Code refactoring (no feature or fix)
+- `test:` - Adding or updating tests
+- `chore:` - Maintenance tasks, dependencies, CI
+
+**Breaking changes:** Add `!` after type or include `BREAKING CHANGE:` in footer (triggers major version bump)
+
+**Examples:**
+```
+feat: add zoom controls to diagram view
+fix: prevent crash when JSON contains circular references
+feat(webview): add dark mode support
+fix!: change default collapse behavior
+chore: update dependencies
+```
+
+**Release workflow:** Push to master triggers release-please to create/update a release PR. Merging that PR creates a GitHub release and publishes to VS Code Marketplace.
