@@ -32,13 +32,7 @@ None at this time. Please report issues on [GitHub](https://github.com/Hugo-Hbrt
 
 ## Release Notes
 
-### 1.0.0
-
-Initial release:
-- Interactive tree diagram visualization
-- Live sync with document changes
-- Collapsible nodes
-- Color-coded card types
+See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ---
 
