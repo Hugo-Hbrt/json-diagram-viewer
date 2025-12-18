@@ -6,13 +6,13 @@ suite("Extension Test Suite", () => {
 
   test("Extension should be present", () => {
     assert.ok(
-      vscode.extensions.getExtension("json-diagram-viewer.json-diagram-viewer")
+      vscode.extensions.getExtension("Hugo-Hbrt.json-diagram-viewer")
     );
   });
 
   test("Extension should only activate on JSON file", async () => {
     const ext = vscode.extensions.getExtension(
-      "json-diagram-viewer.json-diagram-viewer"
+      "Hugo-Hbrt.json-diagram-viewer"
     );
     assert.ok(ext);
 
