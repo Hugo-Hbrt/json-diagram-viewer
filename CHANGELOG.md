@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Hugo-Hbrt/json-diagram-viewer/compare/v1.0.0...v1.0.1) (2025-12-18)
+
+
+### Bug Fixes
+
+* trigger release for toggle and collapse improvements ([d4937ba](https://github.com/Hugo-Hbrt/json-diagram-viewer/commit/d4937ba574dd641a0af56d78e464fbe57cb1330e))
+
 ## [1.0.0](https://github.com/Hugo-Hbrt/json-diagram-viewer/releases/tag/v1.0.0) (2025-12-18)
 
 ### Features
