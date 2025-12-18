@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Hugo-Hbrt/json-diagram-viewer/compare/v1.0.1...v1.1.0) (2025-12-18)
+
+
+### Features
+
+* add extension icon ([ef4e026](https://github.com/Hugo-Hbrt/json-diagram-viewer/commit/ef4e02675763f658b08dd197af23eb3131260242))
+
 ## [1.0.1](https://github.com/Hugo-Hbrt/json-diagram-viewer/compare/v1.0.0...v1.0.1) (2025-12-18)
 
 
