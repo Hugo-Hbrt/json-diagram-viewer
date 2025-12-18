@@ -16,19 +16,24 @@ export function ArrayNode({ nodeKey, value, path, cardClass }: ArrayNodeProps) {
   const { isCollapsed, toggle } = useCollapsible();
 
   return (
-    <CardWrapper cardClass={cardClass} isCollapsed={isCollapsed}>
+    <CardWrapper
+      cardClass={cardClass}
+      isCollapsed={isCollapsed}
+      afterCard={
+        <ArrayChildren
+          items={value}
+          path={path}
+          parentKey={nodeKey}
+          isCollapsed={isCollapsed}
+        />
+      }
+    >
       <CardHeader title={nodeKey} isCollapsed={isCollapsed} onToggle={toggle} />
       <div className="card-body">
         <div className="property">
           <span className="property-value complex">{value.length} items</span>
         </div>
       </div>
-      <ArrayChildren
-        items={value}
-        path={path}
-        parentKey={nodeKey}
-        isCollapsed={isCollapsed}
-      />
     </CardWrapper>
   );
 }

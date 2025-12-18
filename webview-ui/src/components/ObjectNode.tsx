@@ -20,17 +20,22 @@ export function ObjectNode({ nodeKey, value, path, cardClass }: ObjectNodeProps)
   const complex = entries.filter(([, v]) => !isPrimitive(v));
 
   return (
-    <CardWrapper cardClass={cardClass} isCollapsed={isCollapsed}>
+    <CardWrapper
+      cardClass={cardClass}
+      isCollapsed={isCollapsed}
+      afterCard={
+        <ChildrenContainer
+          entries={complex}
+          path={path}
+          isCollapsed={isCollapsed}
+        />
+      }
+    >
       <CardHeader title={nodeKey} isCollapsed={isCollapsed} onToggle={toggle} />
       <div className="card-body">
         <PropertyList entries={primitives} />
         <PropertyList entries={complex} />
       </div>
-      <ChildrenContainer
-        entries={complex}
-        path={path}
-        isCollapsed={isCollapsed}
-      />
     </CardWrapper>
   );
 }

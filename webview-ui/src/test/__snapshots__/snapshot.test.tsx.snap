@@ -1,0 +1,416 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`JsonNode snapshot > renders expanded tree correctly 1`] = `
+<div>
+  <div
+    class="node "
+  >
+    <div
+      class="card root"
+    >
+      <div
+        class="card-header"
+      >
+        <span>
+          root
+        </span>
+        <span
+          class="toggle "
+        >
+          ▼
+        </span>
+      </div>
+      <div
+        class="card-body"
+      >
+        <div
+          class="property"
+        >
+          <span
+            class="property-key"
+          >
+            name
+            :
+          </span>
+          <span
+            class="property-value string"
+          >
+            "Test"
+          </span>
+        </div>
+        <div
+          class="property"
+        >
+          <span
+            class="property-key"
+          >
+            count
+            :
+          </span>
+          <span
+            class="property-value number"
+          >
+            42
+          </span>
+        </div>
+        <div
+          class="property"
+        >
+          <span
+            class="property-key"
+          >
+            active
+            :
+          </span>
+          <span
+            class="property-value boolean"
+          >
+            true
+          </span>
+        </div>
+        <div
+          class="property"
+        >
+          <span
+            class="property-key"
+          >
+            empty
+            :
+          </span>
+          <span
+            class="property-value null"
+          >
+            null
+          </span>
+        </div>
+        <div
+          class="property"
+        >
+          <span
+            class="property-key"
+          >
+            nested
+            :
+          </span>
+          <span
+            class="property-value complex"
+          >
+            {2 keys}
+          </span>
+        </div>
+        <div
+          class="property"
+        >
+          <span
+            class="property-key"
+          >
+            items
+            :
+          </span>
+          <span
+            class="property-value complex"
+          >
+            [2 items]
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="children-container"
+    >
+      <div
+        class="child-wrapper"
+      >
+        <div
+          class="node "
+        >
+          <div
+            class="card nested-object"
+          >
+            <div
+              class="card-header"
+            >
+              <span>
+                nested
+              </span>
+              <span
+                class="toggle "
+              >
+                ▼
+              </span>
+            </div>
+            <div
+              class="card-body"
+            >
+              <div
+                class="property"
+              >
+                <span
+                  class="property-key"
+                >
+                  city
+                  :
+                </span>
+                <span
+                  class="property-value string"
+                >
+                  "Paris"
+                </span>
+              </div>
+              <div
+                class="property"
+              >
+                <span
+                  class="property-key"
+                >
+                  tags
+                  :
+                </span>
+                <span
+                  class="property-value complex"
+                >
+                  [2 items]
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="children-container"
+          >
+            <div
+              class="child-wrapper"
+            >
+              <div
+                class="node "
+              >
+                <div
+                  class="card array"
+                >
+                  <div
+                    class="card-header"
+                  >
+                    <span>
+                      tags
+                    </span>
+                    <span
+                      class="toggle "
+                    >
+                      ▼
+                    </span>
+                  </div>
+                  <div
+                    class="card-body"
+                  >
+                    <div
+                      class="property"
+                    >
+                      <span
+                        class="property-value complex"
+                      >
+                        2
+                         items
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="children-container"
+                >
+                  <div
+                    class="child-wrapper"
+                  >
+                    <div
+                      class="node"
+                    >
+                      <div
+                        class="card array-item"
+                      >
+                        <div
+                          class="card-header"
+                        >
+                          tags[0]
+                        </div>
+                        <div
+                          class="card-body"
+                        >
+                          <div
+                            class="property"
+                          >
+                            <span
+                              class="property-value string"
+                            >
+                              "a"
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="child-wrapper"
+                  >
+                    <div
+                      class="node"
+                    >
+                      <div
+                        class="card array-item"
+                      >
+                        <div
+                          class="card-header"
+                        >
+                          tags[1]
+                        </div>
+                        <div
+                          class="card-body"
+                        >
+                          <div
+                            class="property"
+                          >
+                            <span
+                              class="property-value string"
+                            >
+                              "b"
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="child-wrapper"
+      >
+        <div
+          class="node "
+        >
+          <div
+            class="card array"
+          >
+            <div
+              class="card-header"
+            >
+              <span>
+                items
+              </span>
+              <span
+                class="toggle "
+              >
+                ▼
+              </span>
+            </div>
+            <div
+              class="card-body"
+            >
+              <div
+                class="property"
+              >
+                <span
+                  class="property-value complex"
+                >
+                  2
+                   items
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="children-container"
+          >
+            <div
+              class="child-wrapper"
+            >
+              <div
+                class="node "
+              >
+                <div
+                  class="card array-item"
+                >
+                  <div
+                    class="card-header"
+                  >
+                    <span>
+                      items[0]
+                    </span>
+                    <span
+                      class="toggle "
+                    >
+                      ▼
+                    </span>
+                  </div>
+                  <div
+                    class="card-body"
+                  >
+                    <div
+                      class="property"
+                    >
+                      <span
+                        class="property-key"
+                      >
+                        id
+                        :
+                      </span>
+                      <span
+                        class="property-value number"
+                      >
+                        1
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="child-wrapper"
+            >
+              <div
+                class="node "
+              >
+                <div
+                  class="card array-item"
+                >
+                  <div
+                    class="card-header"
+                  >
+                    <span>
+                      items[1]
+                    </span>
+                    <span
+                      class="toggle "
+                    >
+                      ▼
+                    </span>
+                  </div>
+                  <div
+                    class="card-body"
+                  >
+                    <div
+                      class="property"
+                    >
+                      <span
+                        class="property-key"
+                      >
+                        id
+                        :
+                      </span>
+                      <span
+                        class="property-value number"
+                      >
+                        2
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

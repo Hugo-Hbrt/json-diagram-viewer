@@ -73,9 +73,9 @@ describe('Collapse behavior', () => {
         <JsonNode nodeKey="root" value={data} path={[]} isRoot />
       );
 
-      // Cards should have the 'collapsed' class when collapsed
-      const collapsedCards = container.querySelectorAll('.card.collapsed');
-      expect(collapsedCards.length).toBeGreaterThan(0);
+      // Nodes should have the 'collapsed' class when collapsed
+      const collapsedNodes = container.querySelectorAll('.node.collapsed');
+      expect(collapsedNodes.length).toBeGreaterThan(0);
     });
   });
 });
