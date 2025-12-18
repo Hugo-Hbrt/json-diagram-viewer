@@ -336,11 +336,6 @@ exports[`JsonNode snapshot > renders expanded tree correctly 1`] = `
                     <span>
                       items[0]
                     </span>
-                    <span
-                      class="toggle "
-                    >
-                      ▼
-                    </span>
                   </div>
                   <div
                     class="card-body"
@@ -378,11 +373,6 @@ exports[`JsonNode snapshot > renders expanded tree correctly 1`] = `
                   >
                     <span>
                       items[1]
-                    </span>
-                    <span
-                      class="toggle "
-                    >
-                      ▼
                     </span>
                   </div>
                   <div

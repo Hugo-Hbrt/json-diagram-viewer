@@ -31,7 +31,7 @@ export function ObjectNode({ nodeKey, value, path, cardClass }: ObjectNodeProps)
         />
       }
     >
-      <CardHeader title={nodeKey} isCollapsed={isCollapsed} onToggle={toggle} />
+      <CardHeader title={nodeKey} isCollapsed={isCollapsed} onToggle={toggle} canExpand={complex.length > 0} />
       <div className="card-body">
         <PropertyList entries={primitives} />
         <PropertyList entries={complex} />
