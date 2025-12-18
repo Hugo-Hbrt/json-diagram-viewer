@@ -8,3 +8,4 @@ node_modules/
 .claude/
 webview-ui/node_modules/
 webview-ui/dist/
+FEATURE_IDEAS.md
