@@ -7,3 +7,4 @@ node_modules/
 *.log
 .claude/
 webview-ui/node_modules/
+webview-ui/dist/
