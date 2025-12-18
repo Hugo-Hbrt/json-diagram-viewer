@@ -28,7 +28,7 @@ export function ArrayNode({ nodeKey, value, path, cardClass }: ArrayNodeProps) {
         />
       }
     >
-      <CardHeader title={nodeKey} isCollapsed={isCollapsed} onToggle={toggle} />
+      <CardHeader title={nodeKey} isCollapsed={isCollapsed} onToggle={toggle} canExpand={value.length > 0} />
       <div className="card-body">
         <div className="property">
           <span className="property-value complex">{value.length} items</span>
