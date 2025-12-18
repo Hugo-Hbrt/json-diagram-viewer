@@ -78,4 +78,22 @@ describe('Collapse behavior', () => {
       expect(collapsedNodes.length).toBeGreaterThan(0);
     });
   });
+
+  describe('toggle visibility', () => {
+    it('should not render toggle triangle for cards that cannot be expanded', () => {
+      const data = {
+        name: 'test',
+        count: 42,
+      };
+
+      const { container } = render(
+        <JsonNode nodeKey="root" value={data} path={[]} isRoot />
+      );
+
+      // Root card has only primitive properties, so it cannot be expanded
+      // and should not show a toggle triangle
+      const toggles = container.querySelectorAll('.toggle');
+      expect(toggles.length).toBe(0);
+    });
+  });
 });
