@@ -5,12 +5,12 @@
     "outDir": "out",
     "lib": ["ES2020"],
     "sourceMap": true,
-    "rootDir": "src",
+    "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", ".vscode-test"]
+  "include": ["src/**/*", "shared/**/*"],
+  "exclude": ["node_modules", ".vscode-test", "webview-ui"]
 }

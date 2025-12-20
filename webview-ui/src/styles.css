@@ -15,12 +15,13 @@ body {
   display: flex;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 20px;
+  padding: 60px 20px 20px 20px; /* Top padding for fixed breadcrumb */
 }
 
 .node {
   position: relative;
   margin: 10px 0;
+  scroll-margin-top: 70px; /* Offset for fixed breadcrumb + visibility margin */
 }
 
 .card {
@@ -198,4 +199,70 @@ body {
   color: #888;
   font-style: italic;
   padding: 20px;
+}
+
+/* Breadcrumb navigation */
+.breadcrumb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #252526;
+  border-bottom: 1px solid #3c3c3c;
+  padding: 8px 16px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+}
+
+.breadcrumb ol {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #cccccc;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "›";
+  margin-left: 8px;
+  color: #6e6e6e;
+  font-size: 14px;
+}
+
+.breadcrumb li span {
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: #3c3c3c;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.breadcrumb li span:hover {
+  background: #505050;
+  color: #ffffff;
+}
+
+.breadcrumb li:last-child span {
+  background: #0e639c;
+  color: #ffffff;
+}
+
+.breadcrumb li:last-child span:hover {
+  background: #1177bb;
+}
+
+/* Selected node highlight */
+.node.selected > .card {
+  box-shadow: 0 0 0 2px #0e639c, 0 2px 8px rgba(0, 0, 0, 0.15);
 }
