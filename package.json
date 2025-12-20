@@ -63,7 +63,7 @@
     "lint": "eslint src --ext ts",
     "pretest": "npm run compile",
     "test": "npm run test:webview && npm run test:extension",
-    "test:webview": "cd webview-ui && npm test -- --run",
+    "test:webview": "cd webview-ui && npm test --",
     "test:extension": "node ./out/test/runTest.js",
     "postinstall": "cd webview-ui && npm install"
   },
