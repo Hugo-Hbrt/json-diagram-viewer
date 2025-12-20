@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import { ReactWebviewContentBuilder } from './ReactWebviewContentBuilder';
+import type { VsCodeMessage } from '../shared/types';
 
 export class JsonDiagramPanel {
     public static currentPanel: JsonDiagramPanel | undefined;
@@ -75,10 +76,13 @@ export class JsonDiagramPanel {
     }
 
     private _update(jsonContent: string) {
-        this._panel.webview.postMessage({
+        const filename = this._currentDocumentUri.path.split('/').pop() || 'root';
+        const message: VsCodeMessage = {
             type: 'update',
-            content: jsonContent
-        });
+            content: jsonContent,
+            filename
+        };
+        this._panel.webview.postMessage(message);
     }
 
     private _getHtmlForWebview(): string {

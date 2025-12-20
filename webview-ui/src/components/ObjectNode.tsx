@@ -1,19 +1,36 @@
-import { isPrimitive } from '../utils/jsonUtils';
-import { useCollapsible } from '../hooks/useCollapsible';
-import { CardWrapper } from './CardWrapper';
-import { CardHeader } from './CardHeader';
-import { PropertyList } from './PropertyList';
-import { ChildrenContainer } from './ChildrenContainer';
+import { useEffect } from "react";
+import { isPrimitive } from "../utils/jsonUtils";
+import { isAncestorOf } from "../utils/pathUtils";
+import { useCollapsible } from "../hooks/useCollapsible";
+import { useBreadcrumb } from "../contexts/BreadcrumbContext";
+import { CardWrapper } from "./CardWrapper";
+import { CardHeader } from "./CardHeader";
+import { PropertyList } from "./PropertyList";
+import { ChildrenContainer } from "./ChildrenContainer";
 
-interface ObjectNodeProps {
+interface ObjectNodeProps extends React.HTMLAttributes<HTMLDivElement> {
   nodeKey: string;
   value: Record<string, unknown>;
   path: (string | number)[];
   cardClass: string;
 }
 
-export function ObjectNode({ nodeKey, value, path, cardClass }: ObjectNodeProps) {
-  const { isCollapsed, toggle } = useCollapsible();
+export function ObjectNode({
+  nodeKey,
+  value,
+  path,
+  cardClass,
+  ...otherProps
+}: ObjectNodeProps) {
+  const { isCollapsed, toggle, expand } = useCollapsible();
+  const { path: selectedPath } = useBreadcrumb();
+
+  // Auto-expand if selected path goes through this node
+  useEffect(() => {
+    if (isCollapsed && isAncestorOf(path, selectedPath)) {
+      expand();
+    }
+  }, [selectedPath, path, isCollapsed, expand]);
 
   const entries = Object.entries(value);
   const primitives = entries.filter(([, v]) => isPrimitive(v));
@@ -23,6 +40,7 @@ export function ObjectNode({ nodeKey, value, path, cardClass }: ObjectNodeProps)
     <CardWrapper
       cardClass={cardClass}
       isCollapsed={isCollapsed}
+      path={path}
       afterCard={
         <ChildrenContainer
           entries={complex}
@@ -30,11 +48,18 @@ export function ObjectNode({ nodeKey, value, path, cardClass }: ObjectNodeProps)
           isCollapsed={isCollapsed}
         />
       }
+      {...otherProps}
     >
-      <CardHeader title={nodeKey} isCollapsed={isCollapsed} onToggle={toggle} canExpand={complex.length > 0} />
+      <CardHeader
+        title={nodeKey}
+        path={path}
+        isCollapsed={isCollapsed}
+        onToggle={toggle}
+        canExpand={complex.length > 0}
+      />
       <div className="card-body">
-        <PropertyList entries={primitives} />
-        <PropertyList entries={complex} />
+        <PropertyList entries={primitives} path={path} />
+        <PropertyList entries={complex} path={path} />
       </div>
     </CardWrapper>
   );

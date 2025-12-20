@@ -3,7 +3,7 @@
 exports[`JsonNode snapshot > renders expanded tree correctly 1`] = `
 <div>
   <div
-    class="node "
+    class="node selected"
   >
     <div
       class="card root"
@@ -122,7 +122,7 @@ exports[`JsonNode snapshot > renders expanded tree correctly 1`] = `
         class="child-wrapper"
       >
         <div
-          class="node "
+          class="node"
         >
           <div
             class="card nested-object"
@@ -181,7 +181,7 @@ exports[`JsonNode snapshot > renders expanded tree correctly 1`] = `
               class="child-wrapper"
             >
               <div
-                class="node "
+                class="node"
               >
                 <div
                   class="card array"
@@ -286,7 +286,7 @@ exports[`JsonNode snapshot > renders expanded tree correctly 1`] = `
         class="child-wrapper"
       >
         <div
-          class="node "
+          class="node"
         >
           <div
             class="card array"
@@ -325,7 +325,7 @@ exports[`JsonNode snapshot > renders expanded tree correctly 1`] = `
               class="child-wrapper"
             >
               <div
-                class="node "
+                class="node"
               >
                 <div
                   class="card array-item"
@@ -363,7 +363,7 @@ exports[`JsonNode snapshot > renders expanded tree correctly 1`] = `
               class="child-wrapper"
             >
               <div
-                class="node "
+                class="node"
               >
                 <div
                   class="card array-item"

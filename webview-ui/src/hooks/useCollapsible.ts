@@ -3,6 +3,7 @@ import { useState, useCallback } from 'react';
 interface UseCollapsibleReturn {
   isCollapsed: boolean;
   toggle: () => void;
+  expand: () => void;
 }
 
 export function useCollapsible(initialState = true): UseCollapsibleReturn {
@@ -12,5 +13,9 @@ export function useCollapsible(initialState = true): UseCollapsibleReturn {
     setIsCollapsed(prev => !prev);
   }, []);
 
-  return { isCollapsed, toggle };
+  const expand = useCallback(() => {
+    setIsCollapsed(false);
+  }, []);
+
+  return { isCollapsed, toggle, expand };
 }
