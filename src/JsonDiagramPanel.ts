@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import { ReactWebviewContentBuilder } from './ReactWebviewContentBuilder';
-import type { VsCodeMessage } from '../shared/types';
+import type { VsCodeMessage } from './shared/types';
 
 export class JsonDiagramPanel {
     public static currentPanel: JsonDiagramPanel | undefined;

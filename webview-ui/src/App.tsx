@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { JsonNode } from "./components/JsonNode";
 import { BreadcrumbProvider, useBreadcrumb } from "./contexts/BreadcrumbContext";
-import type { VsCodeMessage } from "../../shared/types";
+import type { VsCodeMessage } from "@shared/types";
 
 function App() {
   const [jsonContent, setJsonContent] = useState<string>("");
