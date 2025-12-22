@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/Hugo-Hbrt/json-diagram-viewer/compare/v1.1.0...v1.2.0) (2025-12-22)
+
+
+### Features
+
+* **breadcrumb:** add breadcrumb navigation for JSON diagram ([#4](https://github.com/Hugo-Hbrt/json-diagram-viewer/issues/4)) ([42db9aa](https://github.com/Hugo-Hbrt/json-diagram-viewer/commit/42db9aa45f3effcb18159048b29c56cbf8bab7ad))
+
+
+### Bug Fixes
+
+* correct TypeScript rootDir to fix CI test runner path ([e76c46b](https://github.com/Hugo-Hbrt/json-diagram-viewer/commit/e76c46bcf4a59465692007eddcface2de8143804))
+
 ## [1.1.0](https://github.com/Hugo-Hbrt/json-diagram-viewer/compare/v1.0.1...v1.1.0) (2025-12-18)
 
 
