@@ -8,5 +8,10 @@ export function isAncestorOf(
 
 export function formatPathForCopy(path: (string | number)[]): string {
   if (path.length === 0) return "";
-  return path.join(".");
+  return path.reduce<string>((result, segment) => {
+    if (typeof segment === "number") {
+      return result + `[${segment}]`;
+    }
+    return result ? result + "." + segment : segment;
+  }, "");
 }
