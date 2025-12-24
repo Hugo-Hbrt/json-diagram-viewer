@@ -8,5 +8,5 @@ export function isAncestorOf(
 
 export function formatPathForCopy(path: (string | number)[]): string {
   if (path.length === 0) return "";
-  return String(path[0]);
+  return path.join(".");
 }
