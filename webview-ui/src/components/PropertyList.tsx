@@ -1,5 +1,7 @@
 import { formatValue } from "../utils/jsonUtils";
 import { useBreadcrumb } from "../contexts/BreadcrumbContext";
+import { useContextMenu } from "../hooks/useContextMenu";
+import { ContextMenu } from "./ContextMenu";
 
 interface PropertyListProps {
   entries: [string, unknown][];
@@ -8,6 +10,7 @@ interface PropertyListProps {
 
 export function PropertyList({ entries, path }: PropertyListProps) {
   const { setPath } = useBreadcrumb();
+  const { menuState, openMenu, closeMenu, copyPath, copyJson } = useContextMenu(path);
 
   if (entries.length === 0) return null;
 
@@ -20,17 +23,31 @@ export function PropertyList({ entries, path }: PropertyListProps) {
           setPath([...path, key]);
         };
 
+        const onContextMenu = (e: React.MouseEvent) => {
+          e.stopPropagation();
+          openMenu(e, key, value);
+        };
+
         return (
           <div key={key} className="property">
-            <span className="property-key" onClick={onClick}>
+            <span className="property-key" onClick={onClick} onContextMenu={onContextMenu}>
               {key}:
             </span>
-            <span className={`property-value ${formatted.className}`}>
+            <span className={`property-value ${formatted.className}`} onContextMenu={onContextMenu}>
               {formatted.display}
             </span>
           </div>
         );
       })}
+      {menuState && (
+        <ContextMenu
+          x={menuState.x}
+          y={menuState.y}
+          onClose={closeMenu}
+          onCopyPath={copyPath}
+          onCopyJson={copyJson}
+        />
+      )}
     </>
   );
 }

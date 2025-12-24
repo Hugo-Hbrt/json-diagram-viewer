@@ -1,10 +1,8 @@
-import { useEffect } from 'react';
 import { isPrimitive } from '../utils/jsonUtils';
-import { isAncestorOf } from '../utils/pathUtils';
 import { useCollapsible } from '../hooks/useCollapsible';
-import { useBreadcrumb } from '../contexts/BreadcrumbContext';
 import { CardWrapper } from './CardWrapper';
 import { CardHeader } from './CardHeader';
+import { CardBody } from './CardBody';
 import { PrimitiveNode } from './PrimitiveNode';
 import { JsonNode } from './JsonNode';
 
@@ -16,15 +14,7 @@ interface ArrayNodeProps {
 }
 
 export function ArrayNode({ nodeKey, value, path, cardClass }: ArrayNodeProps) {
-  const { isCollapsed, toggle, expand } = useCollapsible();
-  const { path: selectedPath } = useBreadcrumb();
-
-  // Auto-expand if selected path goes through this node
-  useEffect(() => {
-    if (isCollapsed && isAncestorOf(path, selectedPath)) {
-      expand();
-    }
-  }, [selectedPath, path, isCollapsed, expand]);
+  const { isCollapsed, toggle } = useCollapsible(path);
 
   return (
     <CardWrapper
@@ -40,12 +30,12 @@ export function ArrayNode({ nodeKey, value, path, cardClass }: ArrayNodeProps) {
         />
       }
     >
-      <CardHeader title={nodeKey} path={path} isCollapsed={isCollapsed} onToggle={toggle} canExpand={value.length > 0} />
-      <div className="card-body">
+      <CardHeader title={nodeKey} path={path} isCollapsed={isCollapsed} onToggle={toggle} canExpand={value.length > 0} value={value} />
+      <CardBody path={path} value={value}>
         <div className="property">
           <span className="property-value complex">{value.length} items</span>
         </div>
-      </div>
+      </CardBody>
     </CardWrapper>
   );
 }

@@ -1,5 +1,6 @@
 import { ReactNode, useRef, useEffect } from "react";
 import { useBreadcrumb } from "../contexts/BreadcrumbContext";
+import { pathsEqual } from "../utils/pathUtils";
 
 interface CardWrapperProps extends React.HTMLAttributes<HTMLDivElement> {
   cardClass: string;
@@ -7,11 +8,6 @@ interface CardWrapperProps extends React.HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   afterCard?: ReactNode;
   path: (string | number)[];
-}
-
-function pathsEqual(a: (string | number)[], b: (string | number)[]): boolean {
-  if (a.length !== b.length) return false;
-  return a.every((val, i) => val === b[i]);
 }
 
 export function CardWrapper({
