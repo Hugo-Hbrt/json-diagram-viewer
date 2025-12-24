@@ -80,4 +80,13 @@ describe("Copy Path - Context Menu", () => {
 
     expect(mockWriteText).toHaveBeenCalledWith("user");
   });
+
+  it("should show context menu when right-clicking property key", () => {
+    const { rootCard } = renderAppWithJson({ name: "Alice", age: 30 }, "test.json");
+    const propertyKey = rootCard.querySelector(".property-key");
+
+    fireEvent.contextMenu(propertyKey!);
+
+    expect(screen.getByText("Copy Path")).toBeInTheDocument();
+  });
 });
