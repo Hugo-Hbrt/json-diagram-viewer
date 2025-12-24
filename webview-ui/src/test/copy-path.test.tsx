@@ -89,4 +89,24 @@ describe("Copy Path - Context Menu", () => {
 
     expect(screen.getByText("Copy Path")).toBeInTheDocument();
   });
+
+  it("should copy correct path for property key", () => {
+    const { rootCard } = renderAppWithJson({ user: { name: "Alice" } }, "test.json");
+
+    // Expand root to show user card
+    const toggle = rootCard.querySelector(".card-header .toggle");
+    fireEvent.click(toggle!);
+
+    // Find the user card and select it (which expands it since it's collapsed)
+    const userCard = rootCard.querySelector(".children-container .node");
+    const userHeader = userCard?.querySelector(".card-header span");
+    fireEvent.click(userHeader!);
+
+    // Find the "name" property key and right-click it
+    const namePropertyKey = screen.getByText("name:");
+    fireEvent.contextMenu(namePropertyKey);
+    fireEvent.click(screen.getByText("Copy Path"));
+
+    expect(mockWriteText).toHaveBeenCalledWith("user.name");
+  });
 });
