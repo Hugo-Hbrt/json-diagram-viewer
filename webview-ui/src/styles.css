@@ -266,3 +266,32 @@ body {
 .node.selected > .card {
   box-shadow: 0 0 0 2px #0e639c, 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* Context menu */
+.context-menu {
+  background: #252526;
+  border: 1px solid #454545;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  padding: 4px 0;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.context-menu button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  color: #cccccc;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.context-menu button:hover {
+  background: #094771;
+  color: #ffffff;
+}
