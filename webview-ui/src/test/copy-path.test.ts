@@ -13,4 +13,8 @@ describe("Copy Path - formatPathForCopy", () => {
   it("should use dot notation for nested properties", () => {
     expect(formatPathForCopy(["user", "name"])).toBe("user.name");
   });
+
+  it("should use bracket notation for array indices", () => {
+    expect(formatPathForCopy(["items", 0])).toBe("items[0]");
+  });
 });
