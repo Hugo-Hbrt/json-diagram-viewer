@@ -7,5 +7,6 @@ export function isAncestorOf(
 }
 
 export function formatPathForCopy(path: (string | number)[]): string {
-  return "";
+  if (path.length === 0) return "";
+  return String(path[0]);
 }
