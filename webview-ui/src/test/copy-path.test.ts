@@ -9,4 +9,8 @@ describe("Copy Path - formatPathForCopy", () => {
   it("should return property name for single property path", () => {
     expect(formatPathForCopy(["user"])).toBe("user");
   });
+
+  it("should use dot notation for nested properties", () => {
+    expect(formatPathForCopy(["user", "name"])).toBe("user.name");
+  });
 });
