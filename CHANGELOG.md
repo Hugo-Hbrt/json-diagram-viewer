@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/Hugo-Hbrt/json-diagram-viewer/compare/v1.2.0...v1.3.0) (2025-12-24)
+
+
+### Features
+
+* Add Copy Path and Copy JSON context menu options ([#7](https://github.com/Hugo-Hbrt/json-diagram-viewer/issues/7)) ([cd00ebc](https://github.com/Hugo-Hbrt/json-diagram-viewer/commit/cd00ebc400886bf540310b8c404bdf673129014b))
+
+
+### Bug Fixes
+
+* use PAT token for release-please to bypass branch ruleset ([d0381b6](https://github.com/Hugo-Hbrt/json-diagram-viewer/commit/d0381b63e604daf7e7d47f7b046aa75800ad65e6))
+
 ## [1.2.0](https://github.com/Hugo-Hbrt/json-diagram-viewer/compare/v1.1.0...v1.2.0) (2025-12-22)
 
 
