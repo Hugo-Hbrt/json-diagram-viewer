@@ -30,6 +30,31 @@ function renderAppWithJson(data: unknown, filename: string) {
   };
 }
 
+function expandCard(node: Element | null): void {
+  if (!node) throw new Error("Cannot expand card: node is null");
+  const toggle = node.querySelector(".card-header .toggle");
+  if (!toggle) throw new Error("Cannot expand card: no .toggle found");
+  fireEvent.click(toggle);
+}
+
+function selectCard(node: Element | null): void {
+  if (!node) throw new Error("Cannot select card: node is null");
+  const header = node.querySelector(".card-header span");
+  if (!header) throw new Error("Cannot select card: no header span found");
+  fireEvent.click(header);
+}
+
+function getChildNode(parent: Element | null): Element | null {
+  if (!parent) return null;
+  return parent.querySelector(".children-container .node");
+}
+
+function rightClickAndCopyPath(element: Element | null): void {
+  if (!element) throw new Error("Cannot right-click: element is null");
+  fireEvent.contextMenu(element);
+  fireEvent.click(screen.getByText("Copy Path"));
+}
+
 describe("Copy Path - formatPathForCopy", () => {
   it.each([
     { path: [], expected: "", desc: "root path (empty array)" },
@@ -68,15 +93,11 @@ describe("Copy Path - Context Menu", () => {
   it("should copy correct path for nested card", () => {
     const { rootCard } = renderAppWithJson({ user: { name: "Alice" } }, "test.json");
 
-    // Expand root to show user card
-    const toggle = rootCard.querySelector(".card-header .toggle");
-    fireEvent.click(toggle!);
-
-    // Find the user card and right-click it
-    const userCard = rootCard.querySelector(".children-container .node");
+    expandCard(rootCard);
+    const userCard = getChildNode(rootCard);
     const userHeader = userCard?.querySelector(".card-header");
-    fireEvent.contextMenu(userHeader!);
-    fireEvent.click(screen.getByText("Copy Path"));
+
+    rightClickAndCopyPath(userHeader!);
 
     expect(mockWriteText).toHaveBeenCalledWith("user");
   });
@@ -93,19 +114,12 @@ describe("Copy Path - Context Menu", () => {
   it("should copy correct path for property key", () => {
     const { rootCard } = renderAppWithJson({ user: { name: "Alice" } }, "test.json");
 
-    // Expand root to show user card
-    const toggle = rootCard.querySelector(".card-header .toggle");
-    fireEvent.click(toggle!);
+    expandCard(rootCard);
+    const userCard = getChildNode(rootCard);
+    selectCard(userCard);
 
-    // Find the user card and select it (which expands it since it's collapsed)
-    const userCard = rootCard.querySelector(".children-container .node");
-    const userHeader = userCard?.querySelector(".card-header span");
-    fireEvent.click(userHeader!);
-
-    // Find the "name" property key and right-click it
     const namePropertyKey = screen.getByText("name:");
-    fireEvent.contextMenu(namePropertyKey);
-    fireEvent.click(screen.getByText("Copy Path"));
+    rightClickAndCopyPath(namePropertyKey);
 
     expect(mockWriteText).toHaveBeenCalledWith("user.name");
   });
