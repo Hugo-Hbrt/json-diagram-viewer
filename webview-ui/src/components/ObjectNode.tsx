@@ -45,6 +45,7 @@ export function ObjectNode({
         isCollapsed={isCollapsed}
         onToggle={toggle}
         canExpand={complex.length > 0}
+        value={value}
       />
       <div className="card-body">
         <PropertyList entries={primitives} path={path} />

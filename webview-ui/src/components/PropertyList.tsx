@@ -10,7 +10,7 @@ interface PropertyListProps {
 
 export function PropertyList({ entries, path }: PropertyListProps) {
   const { setPath } = useBreadcrumb();
-  const { menuState, openMenu, closeMenu, copyPath } = useContextMenu(path);
+  const { menuState, openMenu, closeMenu, copyPath, copyJson } = useContextMenu(path);
 
   if (entries.length === 0) return null;
 
@@ -24,7 +24,7 @@ export function PropertyList({ entries, path }: PropertyListProps) {
         };
 
         const onContextMenu = (e: React.MouseEvent) => {
-          openMenu(e, key);
+          openMenu(e, key, value);
         };
 
         return (
@@ -44,6 +44,7 @@ export function PropertyList({ entries, path }: PropertyListProps) {
           y={menuState.y}
           onClose={closeMenu}
           onCopyPath={copyPath}
+          onCopyJson={copyJson}
         />
       )}
     </>

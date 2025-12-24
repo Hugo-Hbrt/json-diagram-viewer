@@ -9,11 +9,12 @@ interface CardHeaderProps {
   isCollapsed: boolean;
   onToggle: () => void;
   canExpand?: boolean;
+  value?: unknown;
 }
 
-export function CardHeader({ title, path, isCollapsed, onToggle, canExpand = true }: CardHeaderProps) {
+export function CardHeader({ title, path, isCollapsed, onToggle, canExpand = true, value }: CardHeaderProps) {
   const { path: selectedPath, setPath } = useBreadcrumb();
-  const { menuState, openMenu, closeMenu, copyPath } = useContextMenu(path);
+  const { menuState, openMenu, closeMenu, copyPath, copyJson } = useContextMenu(path, value);
 
   const handleTitleClick = () => {
     if (isCollapsed) onToggle(); // Expand if collapsed
@@ -48,6 +49,7 @@ export function CardHeader({ title, path, isCollapsed, onToggle, canExpand = tru
           y={menuState.y}
           onClose={closeMenu}
           onCopyPath={copyPath}
+          onCopyJson={copyJson}
         />
       )}
     </>

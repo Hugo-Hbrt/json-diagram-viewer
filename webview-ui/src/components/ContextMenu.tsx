@@ -5,9 +5,10 @@ interface ContextMenuProps {
   y: number;
   onClose: () => void;
   onCopyPath: () => void;
+  onCopyJson: () => void;
 }
 
-export function ContextMenu({ x, y, onClose, onCopyPath }: ContextMenuProps) {
+export function ContextMenu({ x, y, onClose, onCopyPath, onCopyJson }: ContextMenuProps) {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -44,6 +45,14 @@ export function ContextMenu({ x, y, onClose, onCopyPath }: ContextMenuProps) {
         }}
       >
         Copy Path
+      </button>
+      <button
+        onClick={() => {
+          onCopyJson();
+          onClose();
+        }}
+      >
+        Copy JSON
       </button>
     </div>
   );
