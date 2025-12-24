@@ -2,6 +2,7 @@ import { isPrimitive } from "../utils/jsonUtils";
 import { useCollapsible } from "../hooks/useCollapsible";
 import { CardWrapper } from "./CardWrapper";
 import { CardHeader } from "./CardHeader";
+import { CardBody } from "./CardBody";
 import { PropertyList } from "./PropertyList";
 import { ChildrenContainer } from "./ChildrenContainer";
 
@@ -47,10 +48,10 @@ export function ObjectNode({
         canExpand={complex.length > 0}
         value={value}
       />
-      <div className="card-body">
+      <CardBody path={path} value={value}>
         <PropertyList entries={primitives} path={path} />
         <PropertyList entries={complex} path={path} />
-      </div>
+      </CardBody>
     </CardWrapper>
   );
 }

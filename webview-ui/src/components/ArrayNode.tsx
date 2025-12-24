@@ -2,6 +2,7 @@ import { isPrimitive } from '../utils/jsonUtils';
 import { useCollapsible } from '../hooks/useCollapsible';
 import { CardWrapper } from './CardWrapper';
 import { CardHeader } from './CardHeader';
+import { CardBody } from './CardBody';
 import { PrimitiveNode } from './PrimitiveNode';
 import { JsonNode } from './JsonNode';
 
@@ -30,11 +31,11 @@ export function ArrayNode({ nodeKey, value, path, cardClass }: ArrayNodeProps) {
       }
     >
       <CardHeader title={nodeKey} path={path} isCollapsed={isCollapsed} onToggle={toggle} canExpand={value.length > 0} value={value} />
-      <div className="card-body">
+      <CardBody path={path} value={value}>
         <div className="property">
           <span className="property-value complex">{value.length} items</span>
         </div>
-      </div>
+      </CardBody>
     </CardWrapper>
   );
 }

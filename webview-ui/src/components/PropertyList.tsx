@@ -24,6 +24,7 @@ export function PropertyList({ entries, path }: PropertyListProps) {
         };
 
         const onContextMenu = (e: React.MouseEvent) => {
+          e.stopPropagation();
           openMenu(e, key, value);
         };
 

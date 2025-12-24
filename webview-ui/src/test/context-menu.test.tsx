@@ -98,6 +98,16 @@ describe("Context Menu", () => {
       expect(screen.getByText("Copy JSON")).toBeInTheDocument();
     });
 
+    it("should show context menu when right-clicking card body", () => {
+      const { rootCard } = renderAppWithJson({ name: "Alice" }, "test.json");
+      const cardBody = rootCard.querySelector(".card-body");
+
+      fireEvent.contextMenu(cardBody!);
+
+      expect(screen.getByText("Copy Path")).toBeInTheDocument();
+      expect(screen.getByText("Copy JSON")).toBeInTheDocument();
+    });
+
     it("should show 'Copy JSON' below 'Copy Path' in menu", () => {
       renderAppWithJson({ test: "value" }, "test.json");
 
@@ -256,6 +266,16 @@ describe("Context Menu", () => {
 
       const rootHeader = rootCard.querySelector(".card-header");
       rightClickAndCopyJson(rootHeader);
+
+      const expectedJson = JSON.stringify({ a: 1, b: 2 }, null, 2);
+      expect(mockWriteText).toHaveBeenCalledWith(expectedJson);
+    });
+
+    it("should copy entire node when right-clicking card body", () => {
+      const { rootCard } = renderAppWithJson({ a: 1, b: 2 }, "test.json");
+
+      const cardBody = rootCard.querySelector(".card-body");
+      rightClickAndCopyJson(cardBody);
 
       const expectedJson = JSON.stringify({ a: 1, b: 2 }, null, 2);
       expect(mockWriteText).toHaveBeenCalledWith(expectedJson);
