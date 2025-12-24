@@ -64,4 +64,20 @@ describe("Copy Path - Context Menu", () => {
 
     expect(screen.queryByText("Copy Path")).not.toBeInTheDocument();
   });
+
+  it("should copy correct path for nested card", () => {
+    const { rootCard } = renderAppWithJson({ user: { name: "Alice" } }, "test.json");
+
+    // Expand root to show user card
+    const toggle = rootCard.querySelector(".card-header .toggle");
+    fireEvent.click(toggle!);
+
+    // Find the user card and right-click it
+    const userCard = rootCard.querySelector(".children-container .node");
+    const userHeader = userCard?.querySelector(".card-header");
+    fireEvent.contextMenu(userHeader!);
+    fireEvent.click(screen.getByText("Copy Path"));
+
+    expect(mockWriteText).toHaveBeenCalledWith("user");
+  });
 });
