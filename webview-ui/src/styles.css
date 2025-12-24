@@ -108,11 +108,13 @@ body {
   color: #666;
   margin-right: 8px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .property-value {
   color: #333;
   word-break: break-all;
+  cursor: pointer;
 }
 
 .property-value.string {
@@ -135,7 +137,6 @@ body {
 .property-value.complex {
   color: #888;
   font-style: italic;
-  cursor: pointer;
 }
 
 .property-value.complex:hover {
