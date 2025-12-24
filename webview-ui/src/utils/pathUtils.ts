@@ -5,3 +5,7 @@ export function isAncestorOf(
   if (ancestorPath.length >= descendantPath.length) return false;
   return ancestorPath.every((val, i) => val === descendantPath[i]);
 }
+
+export function formatPathForCopy(path: (string | number)[]): string {
+  return "";
+}
