@@ -88,6 +88,16 @@ describe("Context Menu", () => {
       expect(screen.getByText("Copy JSON")).toBeInTheDocument();
     });
 
+    it("should show context menu when right-clicking property value", () => {
+      renderAppWithJson({ name: "Alice" }, "test.json");
+      const propertyValue = screen.getByText('"Alice"');
+
+      fireEvent.contextMenu(propertyValue);
+
+      expect(screen.getByText("Copy Path")).toBeInTheDocument();
+      expect(screen.getByText("Copy JSON")).toBeInTheDocument();
+    });
+
     it("should show 'Copy JSON' below 'Copy Path' in menu", () => {
       renderAppWithJson({ test: "value" }, "test.json");
 
@@ -168,11 +178,20 @@ describe("Context Menu", () => {
   });
 
   describe("Copy JSON - Primitive Values", () => {
-    it("should copy string value with quotes", () => {
+    it("should copy string value with quotes from property key", () => {
       renderAppWithJson({ name: "Alice" }, "test.json");
 
       const propertyKey = screen.getByText("name:");
       rightClickAndCopyJson(propertyKey);
+
+      expect(mockWriteText).toHaveBeenCalledWith('"Alice"');
+    });
+
+    it("should copy string value with quotes from property value", () => {
+      renderAppWithJson({ name: "Alice" }, "test.json");
+
+      const propertyValue = screen.getByText('"Alice"');
+      rightClickAndCopyJson(propertyValue);
 
       expect(mockWriteText).toHaveBeenCalledWith('"Alice"');
     });

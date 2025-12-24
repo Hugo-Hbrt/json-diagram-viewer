@@ -32,7 +32,7 @@ export function PropertyList({ entries, path }: PropertyListProps) {
             <span className="property-key" onClick={onClick} onContextMenu={onContextMenu}>
               {key}:
             </span>
-            <span className={`property-value ${formatted.className}`}>
+            <span className={`property-value ${formatted.className}`} onContextMenu={onContextMenu}>
               {formatted.display}
             </span>
           </div>
