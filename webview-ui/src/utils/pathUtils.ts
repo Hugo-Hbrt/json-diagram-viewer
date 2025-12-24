@@ -11,8 +11,10 @@ function needsBracketNotation(key: string): boolean {
 }
 
 export function formatPathForCopy(path: (string | number)[]): string {
-  if (path.length === 0) return "";
-  return path.reduce<string>((result, segment) => {
+  // Skip the "root" prefix used internally
+  const pathWithoutRoot = path[0] === "root" ? path.slice(1) : path;
+  if (pathWithoutRoot.length === 0) return "";
+  return pathWithoutRoot.reduce<string>((result, segment) => {
     if (typeof segment === "number") {
       return result + `[${segment}]`;
     }
