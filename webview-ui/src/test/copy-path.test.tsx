@@ -55,6 +55,12 @@ function rightClickAndCopyPath(element: Element | null): void {
   fireEvent.click(screen.getByText("Copy Path"));
 }
 
+async function waitForAnimationFrame(): Promise<void> {
+  await act(async () => {
+    await new Promise((resolve) => requestAnimationFrame(resolve));
+  });
+}
+
 describe("Copy Path - formatPathForCopy", () => {
   it.each([
     { path: [], expected: "", desc: "root path (empty array)" },
@@ -122,5 +128,31 @@ describe("Copy Path - Context Menu", () => {
     rightClickAndCopyPath(namePropertyKey);
 
     expect(mockWriteText).toHaveBeenCalledWith("user.name");
+  });
+
+  it("should close context menu when clicking outside", async () => {
+    const { rootCard } = renderAppWithJson({ user: { name: "Alice" } }, "test.json");
+    const header = rootCard.querySelector(".card-header");
+
+    fireEvent.contextMenu(header!);
+    expect(screen.getByText("Copy Path")).toBeInTheDocument();
+
+    await waitForAnimationFrame();
+    fireEvent.click(document.body);
+
+    expect(screen.queryByText("Copy Path")).not.toBeInTheDocument();
+  });
+
+  it("should close context menu when right-clicking elsewhere", async () => {
+    const { rootCard } = renderAppWithJson({ user: { name: "Alice" } }, "test.json");
+    const header = rootCard.querySelector(".card-header");
+
+    fireEvent.contextMenu(header!);
+    expect(screen.getByText("Copy Path")).toBeInTheDocument();
+
+    await waitForAnimationFrame();
+    fireEvent.contextMenu(document.body);
+
+    expect(screen.queryByText("Copy Path")).not.toBeInTheDocument();
   });
 });
