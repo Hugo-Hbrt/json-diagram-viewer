@@ -1,7 +1,16 @@
 import { render, screen, act, fireEvent } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import App from "../App";
 import { formatPathForCopy } from "../utils/pathUtils";
+
+const mockWriteText = vi.fn();
+
+beforeEach(() => {
+  mockWriteText.mockClear();
+  Object.assign(navigator, {
+    clipboard: { writeText: mockWriteText },
+  });
+});
 
 function renderAppWithJson(data: unknown, filename: string) {
   render(<App />);
@@ -44,5 +53,15 @@ describe("Copy Path - Context Menu", () => {
     fireEvent.contextMenu(header!);
 
     expect(screen.getByText("Copy Path")).toBeInTheDocument();
+  });
+
+  it("should close context menu after clicking 'Copy Path'", () => {
+    const { rootCard } = renderAppWithJson({ user: { name: "Alice" } }, "test.json");
+    const header = rootCard.querySelector(".card-header");
+
+    fireEvent.contextMenu(header!);
+    fireEvent.click(screen.getByText("Copy Path"));
+
+    expect(screen.queryByText("Copy Path")).not.toBeInTheDocument();
   });
 });
