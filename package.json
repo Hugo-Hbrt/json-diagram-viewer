@@ -2,7 +2,7 @@
   "name": "json-diagram-viewer",
   "displayName": "JSON Diagram Viewer",
   "description": "Visualizes JSON files as interactive tree diagrams",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "license": "MIT",
   "publisher": "Hugo-Hbrt",
   "icon": "icon.png",
