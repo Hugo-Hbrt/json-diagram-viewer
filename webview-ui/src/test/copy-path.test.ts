@@ -21,4 +21,8 @@ describe("Copy Path - formatPathForCopy", () => {
   it("should use bracket notation with quotes for keys with special chars", () => {
     expect(formatPathForCopy(["my-key"])).toBe('["my-key"]');
   });
+
+  it("should handle mixed notation for array items with properties", () => {
+    expect(formatPathForCopy(["items", 0, "name"])).toBe("items[0].name");
+  });
 });
