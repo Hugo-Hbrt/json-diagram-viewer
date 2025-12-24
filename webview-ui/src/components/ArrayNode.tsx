@@ -1,8 +1,5 @@
-import { useEffect } from 'react';
 import { isPrimitive } from '../utils/jsonUtils';
-import { isAncestorOf } from '../utils/pathUtils';
 import { useCollapsible } from '../hooks/useCollapsible';
-import { useBreadcrumb } from '../contexts/BreadcrumbContext';
 import { CardWrapper } from './CardWrapper';
 import { CardHeader } from './CardHeader';
 import { PrimitiveNode } from './PrimitiveNode';
@@ -16,15 +13,7 @@ interface ArrayNodeProps {
 }
 
 export function ArrayNode({ nodeKey, value, path, cardClass }: ArrayNodeProps) {
-  const { isCollapsed, toggle, expand } = useCollapsible();
-  const { path: selectedPath } = useBreadcrumb();
-
-  // Auto-expand if selected path goes through this node
-  useEffect(() => {
-    if (isCollapsed && isAncestorOf(path, selectedPath)) {
-      expand();
-    }
-  }, [selectedPath, path, isCollapsed, expand]);
+  const { isCollapsed, toggle } = useCollapsible(path);
 
   return (
     <CardWrapper

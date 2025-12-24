@@ -1,7 +1,6 @@
-import { useState } from "react";
 import { formatValue } from "../utils/jsonUtils";
 import { useBreadcrumb } from "../contexts/BreadcrumbContext";
-import { formatPathForCopy } from "../utils/pathUtils";
+import { useContextMenu } from "../hooks/useContextMenu";
 import { ContextMenu } from "./ContextMenu";
 
 interface PropertyListProps {
@@ -11,15 +10,9 @@ interface PropertyListProps {
 
 export function PropertyList({ entries, path }: PropertyListProps) {
   const { setPath } = useBreadcrumb();
-  const [contextMenu, setContextMenu] = useState<{ x: number; y: number; key: string } | null>(null);
+  const { menuState, openMenu, closeMenu, copyPath } = useContextMenu(path);
 
   if (entries.length === 0) return null;
-
-  const handleCopyPath = () => {
-    if (contextMenu) {
-      navigator.clipboard.writeText(formatPathForCopy([...path, contextMenu.key]));
-    }
-  };
 
   return (
     <>
@@ -31,8 +24,7 @@ export function PropertyList({ entries, path }: PropertyListProps) {
         };
 
         const onContextMenu = (e: React.MouseEvent) => {
-          e.preventDefault();
-          setContextMenu({ x: e.clientX, y: e.clientY, key });
+          openMenu(e, key);
         };
 
         return (
@@ -46,12 +38,12 @@ export function PropertyList({ entries, path }: PropertyListProps) {
           </div>
         );
       })}
-      {contextMenu && (
+      {menuState && (
         <ContextMenu
-          x={contextMenu.x}
-          y={contextMenu.y}
-          onClose={() => setContextMenu(null)}
-          onCopyPath={handleCopyPath}
+          x={menuState.x}
+          y={menuState.y}
+          onClose={closeMenu}
+          onCopyPath={copyPath}
         />
       )}
     </>

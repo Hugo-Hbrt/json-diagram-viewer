@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { useBreadcrumb } from "../contexts/BreadcrumbContext";
-import { isAncestorOf, formatPathForCopy } from "../utils/pathUtils";
+import { isAncestorOf } from "../utils/pathUtils";
+import { useContextMenu } from "../hooks/useContextMenu";
 import { ContextMenu } from "./ContextMenu";
 
 interface CardHeaderProps {
@@ -13,7 +13,7 @@ interface CardHeaderProps {
 
 export function CardHeader({ title, path, isCollapsed, onToggle, canExpand = true }: CardHeaderProps) {
   const { path: selectedPath, setPath } = useBreadcrumb();
-  const [contextMenu, setContextMenu] = useState<{ x: number; y: number } | null>(null);
+  const { menuState, openMenu, closeMenu, copyPath } = useContextMenu(path);
 
   const handleTitleClick = () => {
     if (isCollapsed) onToggle(); // Expand if collapsed
@@ -29,18 +29,9 @@ export function CardHeader({ title, path, isCollapsed, onToggle, canExpand = tru
     onToggle();
   };
 
-  const handleContextMenu = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setContextMenu({ x: e.clientX, y: e.clientY });
-  };
-
-  const handleCopyPath = () => {
-    navigator.clipboard.writeText(formatPathForCopy(path));
-  };
-
   return (
     <>
-      <div className="card-header" onClick={handleTitleClick} onContextMenu={handleContextMenu}>
+      <div className="card-header" onClick={handleTitleClick} onContextMenu={openMenu}>
         <span>{title}</span>
         {canExpand && (
           <span
@@ -51,12 +42,12 @@ export function CardHeader({ title, path, isCollapsed, onToggle, canExpand = tru
           </span>
         )}
       </div>
-      {contextMenu && (
+      {menuState && (
         <ContextMenu
-          x={contextMenu.x}
-          y={contextMenu.y}
-          onClose={() => setContextMenu(null)}
-          onCopyPath={handleCopyPath}
+          x={menuState.x}
+          y={menuState.y}
+          onClose={closeMenu}
+          onCopyPath={copyPath}
         />
       )}
     </>
