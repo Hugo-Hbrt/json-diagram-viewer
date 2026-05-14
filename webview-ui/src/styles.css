@@ -114,7 +114,6 @@ body {
 .property-value {
   color: #333;
   word-break: break-all;
-  cursor: pointer;
 }
 
 .property-value.string {
@@ -137,10 +136,6 @@ body {
 .property-value.complex {
   color: #888;
   font-style: italic;
-}
-
-.property-value.complex:hover {
-  color: #555;
 }
 
 .children-container {
